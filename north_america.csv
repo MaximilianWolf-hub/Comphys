@@ -1,0 +1,577 @@
+Stadt	Einwohner	Land	Breitengrad	Laengengrad
+THE VALLEY	2812.0	Anguilla	18.2145861	-63.0517759
+ORANJESTAD	28295.0	Aruba	12.5268736	-70.0356845
+NASSAU	266100.0	Bahamas	25.0783456	-77.3383331
+BELMOPAN	23038.0	Belize	17.250199	-88.770018
+HAMILTON	854.0	Bermuda	32.2956076	-64.7827048
+Abbotsford	153745.0	Canada	49.0521162	-122.3294792
+Abbotsford-Mission	196007.0	Canada	49.1227582	-122.3044189
+Ajax	126924.0	Canada	43.850374	-79.024658
+Barrie	210800.0	Canada	44.3893113	-79.6901736
+Belleville	109932.0	Canada	44.1633264	-77.3852556
+Brampton	656977.0	Canada	43.6858146	-79.7599337
+Brantford	147548.0	Canada	43.1408157	-80.2631733
+Burlington	189204.0	Canada	43.3248924	-79.7966835
+Burnaby	248071.0	Canada	49.2433804	-122.9725459
+Calgary	1486050.0	Canada	51.0534234	-114.0625892
+Cambridge	136945.0	Canada	43.3600536	-80.3123023
+Chatham-Kent	105877.0	Canada	42.41833	-82.0898417
+Chilliwack	110600.0	Canada	49.157677	-121.9514307
+Coquitlam	149391.0	Canada	49.2842958	-122.793281
+Delta	108724.0	Canada	49.0846258	-123.0579384
+Edmonton	1420916.0	Canada	53.535411	-113.507996
+Gatineau	282596.0	Canada	45.4283596	-75.7106204
+Greater Sudbury / Grand Sudbury	171471.0	Canada	46.581496900000005	-81.06853818206032
+Guelph	162612.0	Canada	43.5460516	-80.2493276
+Halifax	430512.0	Canada	44.648618	-63.5859487
+Hamilton	786641.0	Canada	43.2560802	-79.8728583
+Kamloops	112361.0	Canada	50.6758269	-120.3394159
+Kelowna	212311.0	Canada	49.889326	-119.498291
+Kingston	173450.0	Canada	44.230687	-76.481323
+Kitchener	254740.0	Canada	43.453168	-80.494423
+Kitchener-Cambridge-Waterloo	567740.0	Canada	43.4023881	-80.3705753
+Langley	128487.0	Canada	49.106471850000005	-122.5501311568147
+Laval	432858.0	Canada	45.60558895	-73.73441730569056
+Lethbridge	124553.0	Canada	49.694285	-112.851562
+Lévis V	146080.0	Canada	46.7910096	-71.1753274
+London	532984.0	Canada	42.9836747	-81.2496068
+Longueuil	243921.0	Canada	45.5172382	-73.4467466
+Markham	336445.0	Canada	43.854336	-79.326782
+Milton	120558.0	Canada	43.513671	-79.882817
+Mississauga	747651.0	Canada	43.590338	-79.645729
+Moncton	152604.0	Canada	46.097995	-64.80011
+Montréal	4255541.0	Canada	45.4972159	-73.6103642
+Nanaimo	112881.0	Canada	49.1637594	-123.9379719
+Oakville	206452.0	Canada	43.447436	-79.666672
+Oshawa	405631.0	Canada	43.91768	-78.862953
+OTTAWA	1007501.0	Canada	45.421106	-75.690308
+Ottawa - Gatineau	1414399.0	Canada	45.4466137	-75.7267857
+Peterborough	131283.0	Canada	44.3048009	-78.3199496
+Québec	817408.0	Canada	52.4760892	-71.8258668
+Red Deer	104493.0	Canada	52.269838	-113.818359
+Regina	257337.0	Canada	50.44876	-104.61731
+Richmond	209838.0	Canada	49.163168	-123.137414
+Richmond Hill	199496.0	Canada	43.880078	-79.439392
+Saanich	121032.0	Canada	48.4594315	-123.3764946
+Saguenay	162057.0	Canada	48.405959	-71.069183
+Saint John	130107.0	Canada	45.278752	-66.058044
+Saskatoon	322568.0	Canada	52.131802	-106.660767
+Sherbrooke	218797.0	Canada	45.403271	-71.889038
+St. Catharines	139168.0	Canada	43.1579812	-79.2441003
+St. Catharines-Niagara	429036.0	Canada	43.1579812	-79.2441003
+St. John's	212501.0	Canada	45.2734293	-66.0624177
+Surrey	568158.0	Canada	49.1913033	-122.8491439
+Terrebonne	115484.0	Canada	45.7081005	-73.6515157
+Thunder Bay	126481.0	Canada	48.406414	-89.259796
+Toronto	6341935.0	Canada	43.6534817	-79.3839347
+Trois-Rivières	159078.0	Canada	46.332706	-72.556458
+Vancouver	2650005.0	Canada	49.2608724	-123.1139529
+Vaughan	318279.0	Canada	43.7941544	-79.5268023
+Victoria	395523.0	Canada	48.4283182	-123.3649533
+Waterloo	115921.0	Canada	43.466874	-80.524635
+Whitby	135345.0	Canada	43.899871	-78.940201
+Windsor	349718.0	Canada	42.317099	-83.0353434
+Winnipeg	832186.0	Canada	49.8955367	-97.1384584
+GEORGE TOWN	28089.0	Cayman Islands	19.2953549	-81.3807776
+Alajuela	306206.0	Costa Rica	10.6916755	-84.7561318
+Cartago	161727.0	Costa Rica	9.8642435	-83.9204377
+Desamparados	240671.0	Costa Rica	9.811982700000002	-84.06924175525202
+Goicoechea	136112.0	Costa Rica	9.9670623	-83.9818366
+Heredia	140131.0	Costa Rica	10.3768307	-84.068391
+La Unión	110194.0	Costa Rica	9.9133715	-83.98392968999697
+Pérez Zeledón	142789.0	Costa Rica	9.33921865	-83.64458558172157
+Pococí	146482.0	Costa Rica	10.50112185	-83.6558171845422
+Puntarenas	136328.0	Costa Rica	10.0730022	-84.8622981
+San Carlos	194207.0	Costa Rica	10.6204181	-84.42581545828966
+SAN JOSÉ	342188.0	Costa Rica	9.9325427	-84.0795782
+Bayamo	159797.0	Cuba	20.3734232	-76.6491893
+Camagüey	307527.0	Cuba	21.3824634	-77.9187382
+Ciego de Ávila	120152.0	Cuba	21.8786243	-78.76988962397746
+Cienfuegos	151287.0	Cuba	22.1457501	-80.4526242
+Guantánamo	215847.0	Cuba	20.1431797	-75.2034783
+Holguín	296199.0	Cuba	20.931594949999997	-75.80793545233624
+LA HABANA	2130516.0	Cuba	23.135305	-82.3589631
+Las Tunas	171631.0	Cuba	21.09902485	-76.78682527565178
+Matanzas	141908.0	Cuba	23.0469365	-81.5785643
+Pinar del Río	144102.0	Cuba	22.4167422	-83.7002582
+Sancti Spíritus	108883.0	Cuba	21.724227900000002	-79.61029160341708
+Santa Clara	216497.0	Cuba	22.406572	-79.965149
+Santiago de Cuba	433539.0	Cuba	20.0214637	-75.8294928
+Bajos de Haina	136157.0	Dominican Republic	18.432172700000002	-70.0310060487165
+Baní	166522.0	Dominican Republic	18.2777204	-70.3320746
+Boca Chica	167784.0	Dominican Republic	18.4570748	-69.61487003494634
+Bonao	131036.0	Dominican Republic	18.9383504	-70.405431
+Higüey	311001.0	Dominican Republic	18.6127983	-68.7119822
+La Romana	152344.0	Dominican Republic	18.4975148	-68.9766638
+La Vega	257145.0	Dominican Republic	19.0520669	-70.6316324
+Los Alcarrizos	322256.0	Dominican Republic	18.5312496	-70.03916125684819
+Moca	184611.0	Dominican Republic	19.394647	-70.5261566
+Puerto Plata	163663.0	Dominican Republic	19.7444333	-70.8000756
+San Cristóbal	255184.0	Dominican Republic	18.5200904	-70.2076771
+San Francisco de Macoris	193244.0	Dominican Republic	19.2972812	-70.2533206
+San Juan de la Maguana	127548.0	Dominican Republic	18.8068129	-71.2276951
+San Pedro de Macorís	203461.0	Dominican Republic	18.5116478	-69.4799563
+Santiago de los Caballeros	739631.0	Dominican Republic	19.4503932	-70.6909047
+SANTO DOMINGO	1029607.0	Dominican Republic	18.4801972	-69.942111
+Santo Domingo East	1121121.0	Dominican Republic	18.4801972	-69.942111
+Santo Domingo North	625430.0	Dominican Republic	18.4801972	-69.942111
+Santo Domingo West	429260.0	Dominican Republic	18.4801972	-69.942111
+Ahuachapán	129750.0	El Salvador	13.9234192	-89.8462907
+Apopa	185073.0	El Salvador	13.8013036	-89.1790784
+Ciudad Delgado	128012.0	El Salvador	13.722637	-89.1705245
+Ilopango	135703.0	El Salvador	13.6941885	-89.1104745
+Mejicanos	144872.0	El Salvador	13.722484	-89.1869905
+San Martin	103245.0	El Salvador	13.7386182	-89.055216
+San Miguel	265921.0	El Salvador	13.4803899	-88.17722
+SAN SALVADOR	238244.0	El Salvador	13.6989939	-89.1914249
+Santa Ana	272554.0	El Salvador	13.9947208	-89.5566796
+Santa Tecla	138695.0	El Salvador	13.641521050000001	-89.30814051774473
+Soyapango	283223.0	El Salvador	13.7036727	-89.1502584
+NUUK (GODTHAB)	17798.0	Greenland	64.175029	-51.7355386
+ST. GEORGE'S	38251.0	Grenada	-33.9696966	151.076306
+BASSE-TERRE	44747.0	Guadeloupe	16.0000778	-61.7333373
+Pointe-à-Pitre	171773.0	Guadeloupe	16.2408636	-61.5334077
+CIUDAD DE GUATEMALA	942348.0	Guatemala	14.6222328	-90.5185188
+Cap-Haitien	113555.0	Haiti	19.7595236	-72.2008068
+Carrefour	336222.0	Haiti	18.5345373	-72.4092495
+Delmas	284079.0	Haiti	18.5518464	-72.2920071
+PORT-AU-PRINCE	990558.0	Haiti	18.547327	-72.3395928
+Catacamas	117493.0	Honduras	14.8483829	-85.8935619
+Choloma	231669.0	Honduras	15.6127426	-87.950694
+Choluteca	152519.0	Honduras	13.3696253	-87.07564445652513
+Comayagua	144785.0	Honduras	14.55509585	-87.67794635681561
+Danlí	195916.0	Honduras	14.0324698	-86.5682844
+El Progreso	188366.0	Honduras	15.4009458	-87.8120187
+Juticalpa	124828.0	Honduras	14.6672029	-86.2195829
+La Ceiba	197267.0	Honduras	15.7833743	-86.7917749
+Olanchito	104609.0	Honduras	15.4840687	-86.5678931
+Puerto Cortés	122426.0	Honduras	15.878318799999999	-87.93425116048164
+San Pedro Sula	719064.0	Honduras	15.49479015	-88.06713860966599
+TEGUCIGALPA	1157509.0	Honduras	14.1056861	-87.204676
+Villanueva	149977.0	Honduras	15.3157045	-87.9932276
+KINGSTON	592291.0	Jamaica	17.9712148	-76.7928128
+Montego Bay	111037.0	Jamaica	18.4724603	-77.9217357
+Portmore	182800.0	Jamaica	17.9717917	-76.8738048
+Spanish Town	149479.0	Jamaica	17.9956926	-76.9540831
+FORT-DE-FRANCE	123369.0	Martinique	14.6367927	-61.01582685063731
+Acapulco	935273.0	Mexico	16.8680495	-99.8940182
+Acayucan	122232.0	Mexico	18.0281048	-95.03593818139205
+Aguascalientes	1056560.0	Mexico	22.0000001	-102.5000001
+Apatzingán de la Constitución	102668.0	Mexico	19.0913792	-102.3537356
+Campeche	298741.0	Mexico	19.329205549999998	-89.9439148263377
+Cancún	869664.0	Mexico	21.1617854	-86.8510468
+Cárdenas	106341.0	Mexico	22.005548949999998	-99.64940968096558
+Celaya	748825.0	Mexico	20.5218445	-100.8139609
+Chetumal	258538.0	Mexico	18.5145865	-88.3005528
+Chihuahua	979562.0	Mexico	28.5000001	-106.0000001
+Chilpancingo de los Bravo	321080.0	Mexico	17.3919748	-99.7428629297313
+Ciudad Acuña	147888.0	Mexico	29.319604	-100.9478409
+Ciudad Del Carmen	194484.0	Mexico	18.651739	-91.81492
+Ciudad Guzmán	105539.0	Mexico	19.7001632	-103.4639353
+Ciudad Lázaro Cárdenas	145394.0	Mexico	17.9594769	-102.198659
+Ciudad Obregón	347857.0	Mexico	27.4846619	-109.9337782
+Ciudad Valles	135937.0	Mexico	22.075792399999997	-99.07337577278943
+Ciudad Victoria	365089.0	Mexico	23.7389846	-99.1441352
+Coatzacoalcos	379805.0	Mexico	18.1396787	-94.4501731
+Colima-Villa de Álvarez	388618.0	Mexico	19.2651417	-103.736013
+Comitán de Domínguez	114135.0	Mexico	16.2911698	-92.17532124270645
+Córdoba	341041.0	Mexico	18.92397125	-96.92781089234538
+Cuauhtemoc	134524.0	Mexico	19.4416128	-99.1518637
+Cuautla	491749.0	Mexico	20.20360935	-104.48582666610042
+Cuernavaca	1032278.0	Mexico	18.9218274	-99.2342282
+Culiacán Rosales	966608.0	Mexico	24.7978965	-107.393395
+Delicias	206089.0	Mexico	28.1909814	-105.4694263
+Ensenada	542896.0	Mexico	31.8658887	-116.6029835
+Fresnillo	136447.0	Mexico	23.2249237	-103.01628907146873
+Guadalajara	5060750.0	Mexico	20.6720375	-103.3383962
+Guanajuato	187489.0	Mexico	20.9876996	-101.0
+Guaymas	231206.0	Mexico	28.0738847	-111.01852472776024
+Hermosillo	907233.0	Mexico	29.0948207	-110.9692202
+Heroica Nogales	256387.0	Mexico	31.3078109	-110.9424823
+Hidalgo del Parral	124394.0	Mexico	26.9287164	-105.6674058
+Iguala de la Independencia	122789.0	Mexico	18.1923169	-99.60236695337578
+Irapuato	420701.0	Mexico	20.6758761	-101.3521052
+Juárez	1462133.0	Mexico	19.29348285	-100.46459243844754
+La Laguna	1417538.0	Mexico	20.443863	-97.44505868410334
+La Paz	313203.0	Mexico	19.36376855	-98.94631359855612
+La Piedad-Pénjamo	266495.0	Mexico	20.3691855	-101.9974856
+Lagos de Moreno	109186.0	Mexico	21.533030099999998	-101.81995710355704
+León	1757811.0	Mexico	21.1218598	-101.6825081
+Los Mochis	294683.0	Mexico	25.7928058	-108.990188
+Manzanillo	165808.0	Mexico	19.127656950000002	-104.28412563007706
+Matamoros	542609.0	Mexico	25.8520977	-97.5017951
+Mazatlán	492419.0	Mexico	23.2313053	-106.4153144
+Mérida	1196519.0	Mexico	20.9670759	-89.6237402
+Mexicali	1065882.0	Mexico	32.6248622	-115.448325
+MEXICO, CIUDAD DE	21800319.0	Mexico	19.4326296	-99.1331785
+Minatitlán	387131.0	Mexico	17.7052686	-94.38617333390417
+Monclova-Frontera	374058.0	Mexico	26.925554	-101.4522926
+Monterrey	4834970.0	Mexico	25.6802019	-100.3152586
+Morelia	908203.0	Mexico	19.7027116	-101.1923818
+Moroleón Uriangato	115793.0	Mexico	20.1641836	-101.1599769
+Navojoa	130445.0	Mexico	27.02657005	-109.40226682750367
+Nuevo Laredo	428926.0	Mexico	27.4761506	-99.5185992
+Oaxaca	683127.0	Mexico	17.0	-96.5
+Ocotlán	179112.0	Mexico	20.3872033	-102.73361924832378
+Orizaba	463766.0	Mexico	18.849722	-97.103611
+Pachuca	594972.0	Mexico	20.1165413	-98.7413535
+Piedras Negras	197488.0	Mexico	28.6998135	-100.5267104
+Playa del Carmen	214733.0	Mexico	20.6308643	-87.0779503
+Poza Rica	548859.0	Mexico	20.5320852	-97.4536355
+Puebla-Tlaxcala	3046765.0	Mexico	19.5671635	-98.4677381
+Puerto Vallarta	469204.0	Mexico	20.6407176	-105.2203066
+Querétaro	1337685.0	Mexico	20.8542575	-99.84756
+Reynosa-Río Bravo	843967.0	Mexico	26.0547903	-97.952186
+Rioverde-Ciudad Fernández	146908.0	Mexico	22.020992	-100.0327726
+Salamanca	173831.0	Mexico	20.65232455	-101.16684156787477
+Saltillo	935662.0	Mexico	25.4230425	-100.9927509
+San Cristóbal de las Casas	179647.0	Mexico	16.6835469	-92.61551841991157
+San Francisco del Rincón	200317.0	Mexico	20.92484015	-101.79832877670424
+San José del Cabo	105368.0	Mexico	23.0598364	-109.7025148
+San Juan Bautista Tuxtepec	114259.0	Mexico	18.05040725	-96.11441883995342
+San Juan del Río	157552.0	Mexico	16.8969181	-96.14738987188724
+San Luis Potosí-Soledad de Graciano Sánchez	1188220.0	Mexico	22.1811146	-100.9743859
+San Luis Rio Colorado	182121.0	Mexico	31.9939146	-114.29077314185326
+Tampico	955119.0	Mexico	22.2329889	-97.8614802
+Tapachula de Cordova y Ordoñez	369197.0	Mexico	14.9042905	-92.2609265
+Tecomán	164540.0	Mexico	18.903117299999998	-103.84627300735929
+Tehuacán	329094.0	Mexico	18.465801149999997	-97.39783479972402
+Tehuantepec	180296.0	Mexico	17.1835817	-94.5905353
+Tepatitlán De Morelos	103284.0	Mexico	20.817055449999998	-102.6781613948367
+Tepic	512386.0	Mexico	21.5044414	-104.8946667
+Teziutlán	135074.0	Mexico	19.873992649999998	-97.37156286710564
+Tianguistenco	188473.0	Mexico	19.1622428	-99.46169973763881
+Tijuana	2024993.0	Mexico	32.5010188	-116.9646629
+Tlaxcala	568140.0	Mexico	19.416667	-98.166667
+Toluca	2386156.0	Mexico	19.292545	-99.6569007
+Tula	227414.0	Mexico	22.94788165	-99.8055882397013
+Tulancingo	272228.0	Mexico	20.0839585	-98.3635381
+Túxpan de Rodríguez Cano	118893.0	Mexico	20.9518378	-97.4045371
+Tuxtla Gutiérrez	853518.0	Mexico	16.753801	-93.115959
+Uruapan	301766.0	Mexico	19.406043349999997	-102.03429004621862
+Veracruz	906975.0	Mexico	19.333333	-96.666667
+Victoria de Durango	660663.0	Mexico	24.022008	-104.6547415
+Villahermosa	851925.0	Mexico	18.0018152	-92.93304014837511
+Xalapa	787443.0	Mexico	19.5408338	-96.9146374
+Zacatecas-Guadalupe	377667.0	Mexico	25.7268021	-100.1917586
+Zamora-Jacona	266903.0	Mexico	19.9691384	-102.2983019
+Chinandega	106635.0	Nicaragua	12.8890816	-86.9577726
+León	156049.0	Nicaragua	12.4345376	-86.8773498
+MANAGUA	985143.0	Nicaragua	12.1459907	-86.2746665
+Masaya	110491.0	Nicaragua	12.0008289	-86.0513672
+Tipitapa	105773.0	Nicaragua	12.1962432	-86.096372
+CIUDAD DE PANAMÁ	1107085.0	Panama	8.9714493	-79.5341802
+San Miguelito	370009.0	Panama	9.0552226	-79.4930756
+Bayamón	179565.0	Puerto Rico	18.344958249999998	-66.16837400269127
+Caguas	129604.0	Puerto Rico	18.2214149	-66.41328179513847
+Carolina	154489.0	Puerto Rico	18.3794415	-65.957695
+Ponce	140859.0	Puerto Rico	18.2214149	-66.41328179513847
+SAN JUAN	337288.0	Puerto Rico	18.465299	-66.116666
+CASTRIES	4173.0	Saint Lucia	13.952589249999999	-60.98782353129866
+SAINT-PIERRE	5415.0	Saint Pierre and Miquelon	46.783246899999995	-56.195158907484085
+PORT-OF-SPAIN	37074.0	Trinidad and Tobago	10.6572678	-61.5180173
+GRAND TURK	4831.0	Turks and Caicos Islands	21.467964000000002	-71.13872175290959
+Abilene (TX)	122225.0	United States of America	32.44645	-99.7475905
+Akron (OH)	197633.0	United States of America	41.083064	-81.518485
+Albuquerque (NM)	559277.0	United States of America	35.0841034	-106.6509851
+Alexandria (VA)	155810.0	United States of America	33.7237617	-116.2673237
+Allentown (PA)	120443.0	United States of America	40.6022059	-75.4712794
+Amarillo (TX)	199582.0	United States of America	35.2072185	-101.8338246
+Anaheim (CA)	351043.0	United States of America	33.8347516	-117.911732
+Anchorage (AK)	298192.0	United States of America	61.2163129	-149.8948523
+Ann Arbor (MI)	120782.0	United States of America	42.2681569	-83.7312291
+Antioch (CA)	110898.0	United States of America	38.0049214	-121.805789
+Arlington (TX)	392772.0	United States of America	32.701938999999996	-97.10562379033699
+Arvada (CO)	117453.0	United States of America	39.8211225	-105.22074299044587
+Athens (GA)	123371.0	United States of America	33.9597677	-83.376398
+Atlanta (GA)	472522.0	United States of America	33.7490987	-84.3901849
+Augusta (GA)	197081.0	United States of America	33.4709714	-81.9748429
+Aurora (CO)	361710.0	United States of America	43.6963371	-98.5722461
+Aurora (IL)	201110.0	United States of America	41.7571701	-88.3147539
+Austin (TX)	947890.0	United States of America	30.2711286	-97.7436995
+Bakersfield (CA)	376380.0	United States of America	35.3738712	-119.0194639
+Baltimore (MD)	614664.0	United States of America	39.2908816	-76.610759
+Baton Rouge (LA)	227715.0	United States of America	30.4459596	-91.18738
+Beaumont (TX)	118299.0	United States of America	30.0860459	-94.1018461
+Bellevue (WA)	141400.0	United States of America	47.6144219	-122.1923372
+Berkeley (CA)	121240.0	United States of America	37.8708393	-122.2728639
+Billings (MT)	110323.0	United States of America	45.7874957	-108.49607
+Birmingham (AL)	212157.0	United States of America	33.570499	-86.765783
+Boise City (ID)	223154.0	United States of America	43.6166163	-116.200886
+Boston (MA)	673184.0	United States of America	42.3602534	-71.0582912
+Boulder (CO)	108090.0	United States of America	40.102555	-105.3632079
+Bridgeport (CT)	145936.0	United States of America	46.6741398	-67.9942996
+Broken Arrow (OK)	107403.0	United States of America	36.0525993	-95.7908195
+Brownsville (TX)	183823.0	United States of America	25.9140256	-97.4890856
+Buffalo (NY)	256902.0	United States of America	42.8867166	-78.8783922
+Burbank (CA)	104447.0	United States of America	34.1816482	-118.3258554
+Cambridge (MA)	110651.0	United States of America	42.3750997	-71.1056157
+Cape Coral (FL)	179804.0	United States of America	26.6059432	-81.9806771
+Carlsbad (CA)	113952.0	United States of America	33.1580933	-117.3505966
+Carrollton (TX)	133351.0	United States of America	32.9537349	-96.8902816
+Cary (NC)	162320.0	United States of America	35.7883046	-78.7811964
+Cedar Rapids (IA)	131127.0	United States of America	41.9758872	-91.6704053
+Centennial (CO)	109932.0	United States of America	39.5680644	-104.97783081285026
+Chandler (AZ)	247477.0	United States of America	33.3062223	-111.8413317
+Charleston (SC)	134385.0	United States of America	32.7876012	-79.9402728
+Charlotte (NC)	842051.0	United States of America	35.2272	-80.843083
+Chattanooga (TN)	177571.0	United States of America	35.0457219	-85.3094883
+Chesapeake (VA)	237940.0	United States of America	36.7183708	-76.2466798
+Chicago (IL)	2704958.0	United States of America	41.8755616	-87.6244212
+Chula Vista (CA)	267172.0	United States of America	32.6400541	-117.0841955
+Cincinnati (OH)	298800.0	United States of America	39.1014537	-84.5124602
+Clarksville (TN)	150287.0	United States of America	36.5277607	-87.3588703
+Clearwater (FL)	114361.0	United States of America	27.9658533	-82.8001026
+Cleveland (OH)	385809.0	United States of America	41.5051613	-81.6934446
+Clovis (CA)	106583.0	United States of America	36.8252277	-119.7029194
+College Station (TX)	112141.0	United States of America	30.5955289	-96.3071042
+Colorado Springs (CO)	465101.0	United States of America	38.8339578	-104.8253485
+Columbia (MO)	120612.0	United States of America	38.951883	-92.3337366
+Columbia (SC)	134309.0	United States of America	34.0007493	-81.0343313
+Columbus (GA)	197485.0	United States of America	32.4609764	-84.9877094
+Columbus (OH)	860090.0	United States of America	39.9622601	-83.0007065
+Concord (CA)	128726.0	United States of America	37.9768525	-122.0335624
+Coral Springs (FL)	130059.0	United States of America	26.26485615	-80.26534203798758
+Corona (CA)	166785.0	United States of America	33.8752945	-117.5664449
+Corpus Christi (TX)	325733.0	United States of America	27.7477253	-97.4014129
+Costa Mesa (CA)	112822.0	United States of America	33.6633386	-117.903317
+Dallas (TX)	1317929.0	United States of America	32.7762719	-96.7968559
+Daly City (CA)	106472.0	United States of America	37.6904826	-122.4726708
+Davenport (IA)	102612.0	United States of America	41.5236436	-90.5776368
+Davie (FL)	101871.0	United States of America	26.075729	-80.28410897530864
+Dayton (OH)	140489.0	United States of America	39.7589478	-84.1916069
+Denton (TX)	133808.0	United States of America	33.1838787	-97.1413417
+Denver (CO)	693060.0	United States of America	39.7348381	-104.9653271
+Des Moines (IA)	215472.0	United States of America	41.5910641	-93.6037149
+Detroit (MI)	672795.0	United States of America	42.3315509	-83.0466403
+Downey (CA)	113267.0	United States of America	33.942215	-118.1235646
+Durham (NC)	263016.0	United States of America	35.996653	-78.9018053
+El Cajon (CA)	103768.0	United States of America	32.7947731	-116.9625269
+El Monte (CA)	115807.0	United States of America	34.0751571	-118.036849
+El Paso (TX)	683080.0	United States of America	31.7754152	-106.4646348
+Elgin (IL)	112123.0	United States of America	42.03726	-88.2810994
+Elizabeth (NJ)	128640.0	United States of America	40.6639916	-74.2107006
+Elk Grove (CA)	169743.0	United States of America	38.4087993	-121.3716178
+Escondido (CA)	151613.0	United States of America	33.1216751	-117.0814849
+Eugene (OR)	166575.0	United States of America	44.0505054	-123.0950506
+Evansville (IN)	119477.0	United States of America	37.9747645	-87.5558483
+Everett (WA)	109043.0	United States of America	47.9673056	-122.2013998
+Fairfield (CA)	114756.0	United States of America	38.2493581	-122.0399663
+Fargo (ND)	120762.0	United States of America	46.877229	-96.789821
+Fayetteville (NC)	204759.0	United States of America	35.0525759	-78.878292
+Fontana (CA)	209665.0	United States of America	34.0922335	-117.435048
+Fort Collins (CO)	164207.0	United States of America	40.5508527	-105.0668085
+Fort Lauderdale (FL)	178752.0	United States of America	26.1223084	-80.1433786
+Fort Wayne (IN)	264488.0	United States of America	41.0799898	-85.1386015
+Fort Worth (TX)	854113.0	United States of America	32.753177	-97.3327459
+Fremont (CA)	233136.0	United States of America	37.5482697	-121.9885719
+Fresno (CA)	522053.0	United States of America	36.7295295	-119.70886126075588
+Frisco (TX)	163656.0	United States of America	33.1506744	-96.8236116
+Fullerton (CA)	140721.0	United States of America	33.8708215	-117.9294165
+Gainesville (FL)	131591.0	United States of America	29.67357765	-82.32337460192167
+Garden Grove (CA)	174858.0	United States of America	33.7746292	-117.9463717
+Garland (TX)	234943.0	United States of America	32.912624	-96.6388833
+Gilbert (AZ)	237133.0	United States of America	33.3527632	-111.7890373
+Glendale (AZ)	245895.0	United States of America	33.5386858	-112.1859941
+Glendale (CA)	200831.0	United States of America	34.1469416	-118.2478471
+Grand Prairie (TX)	190682.0	United States of America	32.657368000000005	-97.02846624175038
+Grand Rapids (MI)	196445.0	United States of America	42.9142413	-85.533004
+Greeley (CO)	103990.0	United States of America	38.4570355	-101.8185007
+Green Bay (WI)	105139.0	United States of America	44.5126379	-88.0125794
+Greensboro (NC)	287027.0	United States of America	36.0726355	-79.7919754
+Gresham (OR)	111523.0	United States of America	45.4997475	-122.4309766
+Hampton (VA)	135410.0	United States of America	37.0300969	-76.3452057
+Hartford (CT)	123243.0	United States of America	43.648048	-70.241416
+Hayward (CA)	158937.0	United States of America	37.6688205	-122.0807964
+Henderson (NV)	292969.0	United States of America	36.0301134	-114.9826194
+Hialeah (FL)	236387.0	United States of America	25.8575963	-80.2781057
+High Point City (NC)	111223.0	United States of America	35.9556924	-80.0053176
+Hillsboro (OR)	105164.0	United States of America	45.5228939	-122.989827
+Hollywood (FL)	151998.0	United States of America	26.0112014	-80.1494901
+Houston (TX)	2303482.0	United States of America	29.7589382	-95.3676974
+Huntington Beach (CA)	200652.0	United States of America	33.6783336	-118.0000166
+Huntsville (AL)	193079.0	United States of America	33.554113	-86.804219
+Independence (MO)	117030.0	United States of America	39.0924792	-94.4137923
+Indianapolis (IN)	855164.0	United States of America	39.7683331	-86.1583502
+Inglewood (CA)	110654.0	United States of America	33.9562003	-118.353132
+Irvine (CA)	266122.0	United States of America	33.6856969	-117.8259819
+Irving (TX)	238289.0	United States of America	32.8295183	-96.9442177
+Jackson (MS)	169148.0	United States of America	45.44924535	-122.71540511633506
+Jacksonville (FL)	880619.0	United States of America	30.3321838	-81.655651
+Jersey City (NJ)	264152.0	United States of America	40.7281575	-74.0776417
+Joliet (IL)	148262.0	United States of America	41.5263603	-88.0840212
+Jurupa Valley (CA)	103541.0	United States of America	33.9798472	-117.4515754
+Kansas City (KS)	151709.0	United States of America	39.1134562	-94.626497
+Kansas City (MO)	481420.0	United States of America	39.100105	-94.5781416
+Kent (WA)	127514.0	United States of America	47.3826903	-122.2270272
+Killeen (TX)	143400.0	United States of America	31.1171441	-97.727796
+Knoxville (TN)	186239.0	United States of America	35.9603948	-83.9210261
+Lafayette (LA)	127626.0	United States of America	30.2240897	-92.0198427
+Lakeland (FL)	106420.0	United States of America	28.047059400000002	-81.95391393602787
+Lakewood (CO)	154393.0	United States of America	39.631108499999996	-105.11005818223015
+Lancaster (CA)	160106.0	United States of America	34.6981064	-118.1366153
+Lansing (MI)	116020.0	United States of America	42.7338147	-84.5207088
+Laredo (TX)	257156.0	United States of America	27.5199841	-99.4953764
+Las Cruces (NM)	101759.0	United States of America	32.3140354	-106.7798078
+Las Vegas (NV)	632912.0	United States of America	36.1672559	-115.1485163
+League City (TX)	102010.0	United States of America	29.5074538	-95.0949303
+Lewisville (TX)	104659.0	United States of America	33.046233	-96.994174
+Lexington-Fayette (KY)	318449.0	United States of America	38.0464066	-84.4970393
+Lincoln (NE)	280364.0	United States of America	40.8088861	-96.7077751
+Little Rock (AR)	198541.0	United States of America	34.7464809	-92.2895948
+Long Beach (CA)	470130.0	United States of America	33.7690164	-118.1916048
+Los Angeles (CA)	3976322.0	United States of America	34.0536909	-118.2427666
+Louisville (KY)	616261.0	United States of America	38.2542376	-85.759407
+Lowell (MA)	110558.0	United States of America	42.6334247	-71.3161718
+Lubbock (TX)	252506.0	United States of America	33.5635206	-101.879336
+Macon-Bibb (GA)	152555.0	United States of America	32.8406946	-83.6324022
+Madison (WI)	252551.0	United States of America	43.074761	-89.3837613
+Manchester (NH)	110506.0	United States of America	42.9956397	-71.4547891
+McAllen (TX)	142212.0	United States of America	26.2043691	-98.230082
+McKinney City (TX)	172298.0	United States of America	33.1976496	-96.6154471
+Memphis (TN)	652717.0	United States of America	35.1490215	-90.0516285
+Mesa (AZ)	484587.0	United States of America	33.4151117	-111.8314773
+Mesquite (TX)	143736.0	United States of America	32.7666103	-96.599472
+Miami (FL)	453579.0	United States of America	25.7742658	-80.1936589
+Miami Gardens (FL)	113058.0	United States of America	25.9423108	-80.23976495072381
+Midland City (TX)	134610.0	United States of America	31.3187878	-85.4938975
+Milwaukee (WI)	595047.0	United States of America	43.0349931	-87.922497
+Minneapolis (MN)	413651.0	United States of America	44.9772995	-93.2654692
+Miramar (FL)	138449.0	United States of America	25.975911449999998	-80.33472128115224
+Mobile (AL)	192904.0	United States of America	39.092585	-84.853229
+Modesto (CA)	212175.0	United States of America	37.6390972	-120.9968782
+Montgomery (AL)	200022.0	United States of America	40.85239	-78.266098
+Moreno Valley (CA)	205499.0	United States of America	33.937517	-117.2305944
+Murfreesboro (TN)	131947.0	United States of America	35.845999	-86.3920452
+Murrieta (CA)	111674.0	United States of America	33.560832	-117.2106564
+Naperville (IL)	147122.0	United States of America	41.7728699	-88.1479278
+Nashville-Davidson (TN)	660388.0	United States of America	36.1622296	-86.7743531
+New Haven (CT)	129934.0	United States of America	40.0482838	-105.2474007
+New Orleans (LA)	391495.0	United States of America	29.9499323	-90.0701156
+New York (NY)	8537673.0	United States of America	40.7127281	-74.0060152
+Newark (NJ)	281764.0	United States of America	40.735657	-74.1723667
+Newport News (VA)	181825.0	United States of America	36.9786449	-76.4321089
+Norfolk (VA)	245115.0	United States of America	36.8462923	-76.2929252
+Norman (OK)	122180.0	United States of America	35.2225717	-97.4394816
+North Charleston (SC)	109298.0	United States of America	32.9131295	-80.0629981965219
+North Las Vegas (NV)	238702.0	United States of America	36.2005843	-115.1215844
+Norwalk (CA)	106178.0	United States of America	33.9092802	-118.0849169
+Oakland (CA)	420005.0	United States of America	37.8044557	-122.2713563
+Oceanside (CA)	175464.0	United States of America	33.1958696	-117.3794834
+Odessa (TX)	117871.0	United States of America	31.8457149	-102.367687
+Oklahoma City (OK)	638367.0	United States of America	35.4729886	-97.5170536
+Olathe (KS)	135473.0	United States of America	38.8838856	-94.81887
+Omaha (NE)	446970.0	United States of America	41.2587459	-95.9383758
+Ontario (CA)	173212.0	United States of America	34.065846	-117.6484304
+Orange (CA)	140504.0	United States of America	33.7500378	-117.8704931
+Orlando (FL)	277173.0	United States of America	28.5479786	-81.41278418563017
+Overland Park (KS)	188966.0	United States of America	38.9742502	-94.6851702
+Oxnard (CA)	207906.0	United States of America	34.1976308	-119.1803818
+Palm Bay City (FL)	110104.0	United States of America	28.0330075	-80.6433552
+Palmdale (CA)	157356.0	United States of America	34.5793131	-118.1171108
+Pasadena (CA)	142059.0	United States of America	34.1476452	-118.1444779
+Pasadena (TX)	153351.0	United States of America	29.6910625	-95.2091006
+Paterson (NJ)	147000.0	United States of America	40.9167654	-74.171811
+Pearland (TX)	113570.0	United States of America	29.5639758	-95.2864299
+Pembroke Pines (FL)	168587.0	United States of America	26.02322025	-80.34123906625615
+Peoria (AZ)	164173.0	United States of America	33.5806115	-112.2372942
+Peoria (IL)	114265.0	United States of America	40.6938609	-89.5891008
+Philadelphia (PA)	1567872.0	United States of America	39.9527237	-75.1635262
+Phoenix (AZ)	1615017.0	United States of America	33.4484367	-112.0741417
+Pittsburgh (PA)	303625.0	United States of America	40.4416941	-79.9900861
+Plano (TX)	286057.0	United States of America	33.0136764	-96.6925096
+Pomona (CA)	152494.0	United States of America	34.0553813	-117.7517496
+Pompano Beach (FL)	109393.0	United States of America	26.2378597	-80.1247667
+Port St. Lucie (FL)	185132.0	United States of America	27.2939333	-80.3503283
+Portland (OR)	639863.0	United States of America	45.5202471	-122.6741949
+Providence (RI)	179219.0	United States of America	41.8239891	-71.4128343
+Provo (UT)	116868.0	United States of America	40.2338438	-111.6585337
+Pueblo (CO)	110291.0	United States of America	38.187635	-104.5350145
+Raleigh (NC)	458880.0	United States of America	35.7803977	-78.6390989
+Rancho Cucamonga (CA)	176534.0	United States of America	34.1033192	-117.5751735
+Reno (NV)	245255.0	United States of America	39.5261206	-119.8126581
+Renton (WA)	100953.0	United States of America	47.4799078	-122.2034496
+Rialto (CA)	103314.0	United States of America	34.1064001	-117.3703235
+Richardson (TX)	113347.0	United States of America	32.9481789	-96.7297206
+Richmond (CA)	109813.0	United States of America	37.9357576	-122.3477486
+Richmond (VA)	223170.0	United States of America	37.5385087	-77.43428
+Riverside (CA)	324722.0	United States of America	33.9533546	-117.3961623
+Rochester (MN)	114011.0	United States of America	44.0234387	-92.4630182
+Rochester (NY)	208880.0	United States of America	43.157285	-77.615214
+Rockford (IL)	147651.0	United States of America	42.2713945	-89.093966
+Roseville (CA)	132671.0	United States of America	38.7521235	-121.2880059
+Round Rock (TX)	120892.0	United States of America	30.508235	-97.6788934
+Sacramento (CA)	495234.0	United States of America	38.5815719	-121.4943996
+Salem (OR)	167419.0	United States of America	44.9391565	-123.033121
+Salinas (CA)	157218.0	United States of America	36.6744117	-121.6550372
+Salt Lake City (UT)	193744.0	United States of America	40.7596198	-111.8867975
+San Angelo (TX)	100702.0	United States of America	31.4648357	-100.4398442
+San Antonio (TX)	1492510.0	United States of America	29.4246002	-98.4951405
+San Bernardino (CA)	216239.0	United States of America	34.8253019	-116.0833144
+San Buenaventura (CA)	109592.0	United States of America	34.2783355	-119.2931743
+San Diego (CA)	1406630.0	United States of America	32.7174209	-117.1627714
+San Francisco (CA)	870887.0	United States of America	37.7790262	-122.4199061
+San Jose (CA)	1025350.0	United States of America	37.3361905	-121.8905833
+San Mateo (CA)	103959.0	United States of America	37.496904	-122.3330573
+Sandy Springs (GA)	105703.0	United States of America	33.9242688	-84.3785379
+Santa Ana (CA)	334217.0	United States of America	33.7494951	-117.8732213
+Santa Clara (CA)	125948.0	United States of America	37.2333253	-121.6846349
+Santa Clarita (CA)	181972.0	United States of America	34.3916641	-118.542586
+Santa Maria (CA)	106290.0	United States of America	34.9531295	-120.4358577
+Santa Rosa (CA)	175155.0	United States of America	38.4404925	-122.7141049
+Savannah (GA)	146763.0	United States of America	32.0809263	-81.0911768
+Scottsdale (AZ)	246645.0	United States of America	33.4942189	-111.9260184
+Seattle (WA)	704352.0	United States of America	47.6038321	-122.3300624
+Shreveport (LA)	194920.0	United States of America	32.5221828	-93.7651944
+Simi Valley (CA)	126327.0	United States of America	34.2694474	-118.781482
+Sioux Falls (SD)	174360.0	United States of America	43.5499749	-96.700327
+South Bend (IN)	101735.0	United States of America	41.6833813	-86.2500066
+Spokane (WA)	215973.0	United States of America	47.6579425	-117.4212265
+Springfield (IL)	115715.0	United States of America	39.7990175	-89.6439575
+Springfield (MA)	154074.0	United States of America	42.1014831	-72.589811
+Springfield (MO)	167319.0	United States of America	37.2166779	-93.2920373
+St. Louis (MO)	311404.0	United States of America	35.5804891	-106.0752525
+St. Paul (MN)	302398.0	United States of America	44.9504037	-93.1015026
+St. Petersburg (FL)	260999.0	United States of America	27.7703796	-82.6695085
+Stamford (CT)	129113.0	United States of America	39.3545507	-120.0896591
+Sterling Heights (MI)	132427.0	United States of America	42.5803122	-83.0302033
+Stockton (CA)	307072.0	United States of America	37.9577016	-121.2907796
+Sunnyvale (CA)	152771.0	United States of America	37.3688301	-122.0363496
+Surprise (AZ)	132677.0	United States of America	33.6292271	-112.3680189
+Syracuse (NY)	143378.0	United States of America	43.0481221	-76.1474244
+Tacoma (WA)	211277.0	United States of America	47.2495798	-122.4398746
+Tallahassee (FL)	190894.0	United States of America	30.4380832	-84.2809332
+Tampa (FL)	377165.0	United States of America	27.9477595	-82.458444
+Temecula (CA)	113054.0	United States of America	33.4946353	-117.1473661
+Tempe (AZ)	182498.0	United States of America	33.4255056	-111.9400125
+Thornton (CO)	136703.0	United States of America	39.8695516	-104.9851819
+Thousand Oaks (CA)	128888.0	United States of America	34.17142715	-118.91058772974445
+Toledo (OH)	278508.0	United States of America	41.6786754	-83.5127283
+Topeka (KS)	126808.0	United States of America	39.049011	-95.677556
+Torrance (CA)	147195.0	United States of America	33.8358492	-118.3406288
+Tucson (AZ)	530706.0	United States of America	32.2228765	-110.9748477
+Tulsa (OK)	403090.0	United States of America	36.1556805	-95.9929113
+Tyler (TX)	104798.0	United States of America	32.3512601	-95.3010624
+Honolulu (HI)	351792.0	United States of America	21.304547	-157.8556764
+Vallejo (CA)	121299.0	United States of America	38.1040864	-122.2566367
+Vancouver (WA)	174826.0	United States of America	45.6306954	-122.6744557
+Victorville City (CA)	122265.0	United States of America	34.5361067	-117.2911565
+Virginia Beach (VA)	452602.0	United States of America	36.8529841	-75.9774183
+Visalia (CA)	131074.0	United States of America	36.3302284	-119.2920585
+Vista (CA)	101659.0	United States of America	33.2000368	-117.2425355
+Waco (TX)	134432.0	United States of America	31.549333	-97.1466695
+Warren (MI)	135125.0	United States of America	42.4932575	-83.0062746
+WASHINGTON (DC)	681170.0	United States of America	38.8949855	-77.0365708
+Waterbury (CT)	108272.0	United States of America	40.154852	-74.565672
+West Covina (CA)	107847.0	United States of America	34.0686208	-117.9389526
+West Jordan (UT)	113699.0	United States of America	40.6096698	-111.9391031
+West Palm Beach (FL)	108161.0	United States of America	26.715364	-80.0532942
+West Valley City (UT)	136574.0	United States of America	40.696629	-111.9867271
+Westminster (CO)	113875.0	United States of America	39.8366528	-105.0372046
+Wichita (KS)	389902.0	United States of America	37.6922361	-97.3375448
+Wichita Falls (TX)	104724.0	United States of America	33.9137085	-98.4933873
+Wilmington (NC)	117525.0	United States of America	34.2257282	-77.9447107
+Winston-Salem (NC)	242203.0	United States of America	36.0998131	-80.2440518
+Worcester (MA)	184508.0	United States of America	42.2625932	-71.8022934
+Yonkers (NY)	200807.0	United States of America	40.9312099	-73.8987469
+CHARLOTTE AMALIE	10354.0	United States Virgin Islands	18.341137	-64.932789
