@@ -8,7 +8,7 @@ airConnections = np.loadtxt("airConnections.txt", dtype=str, encoding="utf-8", d
 #aus anderen Städten in die jeweilige Stadt und Reisen aus der Stadt in andere Städte
 
 #Reisewahrscheinlichkeit
-pt = 1e-5
+pt = 0.01
 
 
 #Funktion gibt alle möglichen Land-Verbindungen aus als Liste
@@ -20,6 +20,7 @@ def travelLand(city):
         if city == landConnections[i, 1]:
             L.append(landConnections[i, 0])
     return L
+
 
 
 #Funktion gibt alle möglichen Luftverbindungen einer Stand aus
@@ -34,3 +35,34 @@ def travelAir(city):
         return L
     else:
         return []
+
+
+
+
+def travelLandAll():
+    for i in cities:
+        index = cities.index(i)
+        L = travelLand(i)
+        k = len(L)
+        for j in L:
+            index2 = cities.index(j)
+            population[index2] += 1 / k * population[index] * pt
+            population[index] -= 1 / k * population[index] * pt
+
+def travelAirAll():
+    for i in airConnections[:, 0]:
+        index = cities.index(i)
+        L = travelAir(i)
+        k = len(L)
+        if not L == []:
+            for j in L:
+                index2 = cities.index(j)
+                population[index2] += 1 / k * population[index] * pt
+                population[index] -= 1 / k * population[index] * pt
+
+print(population[10])
+for i in range(10):
+    travelAirAll()
+    travelLandAll()
+print(population[10])
+
