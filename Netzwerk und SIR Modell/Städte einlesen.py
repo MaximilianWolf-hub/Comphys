@@ -39,5 +39,12 @@ with open('landverkehr.txt', 'w', encoding='utf-8') as file:
             if abstand_ij <= 500:
                 file.write(f'{g_staedte[i]}\t{g_staedte[j]}\t{abstand_ij:.2f}\n')
 
-
+with open('flugverkehr', 'w', encoding='utf-8') as file:
+    ueberschrift = ['Stadt1', 'Stadt2']
+    file.write(f'{ueberschrift[0]}\t{ueberschrift[1]}\n')
+    for i in range(len(g_staedte)):
+        if g_einwohner[i] >= 1e6:
+            for j in range(i + 1, len(g_staedte)):
+                if g_einwohner[j] >= 1e6:
+                    file.write(f'{g_staedte[i]}\t{g_staedte[j]}\n')
 
