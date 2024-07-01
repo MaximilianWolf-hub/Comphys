@@ -8,7 +8,7 @@ h_laender = data[:, 2]
 h_breitengrad = data[:, 3].astype(float)
 h_laengengrad = data[:, 4].astype(float)
 
-#Listen wobei dort nur Städte mit mehr als 2 * 10^5 Einwohner berücksichtigt werden
+#Listen der Städte, wobei dort nur Städte mit mehr als 2 * 10^5 Einwohner berücksichtigt werden
 cities = []
 population = []
 laender = []
@@ -24,7 +24,7 @@ for i in range(len(h_einwohner)):
         cities.append(h_staedte[i])
 
 
-def abstand(j, k): #berechnet Abstand in Kilometer
+def abstand(j, k): #berechnet Abstand zweier Städte in Kilometern
     dx = 71.5 * (laengengrad[j] - laengengrad[k])  #71,5 km ist Abstand zwischen zwei Längengraden
     dy = 111.3 * (breitengrad[j] - breitengrad[k]) #111,3 km ist Abstand zweier Längengrade
     return np.sqrt(dx**2 + dy**2)

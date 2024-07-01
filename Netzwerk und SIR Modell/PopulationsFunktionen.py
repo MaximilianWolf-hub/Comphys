@@ -60,9 +60,8 @@ def travelAirAll():
                 population[index2] += 1 / k * population[index] * pt
                 population[index] -= 1 / k * population[index] * pt
 
-print(population[10])
-for i in range(10):
-    travelAirAll()
-    travelLandAll()
-print(population[10])
+
+beta = 1
+mu = 1
+gamma = 1
 
