@@ -49,5 +49,28 @@ def infectRK4(x):       #Übergebe ein Array mit den S, I, R für eine Stadt
 def infectODEsolver(x, t):
     deltat = np.array([t, t + 1], dtype=float)
     x = odeint(SIR, x, deltat)
-    return x
+    return x[-1]  # Wir interessieren uns nur für den Endwert nach einem Zeitschritt
+
+#SIR Modell mit Euler Verfahren fur alle Städte
+def infectEulerAll():
+    for i in range(len(cities)):
+        x = [sus[i][0], inf[i][0], rec[i][0]]
+        result = infectEuler(np.array(x))
+        sus[i][0], inf[i][0], rec[i][0] = result
+
+
+#SIR Modell mit Runge-Kutta Verfahren fur alle Städte
+def infectRK4All():
+    for i in range(len(cities)):
+        x = [sus[i][0], inf[i][0], rec[i][0]]
+        result = infectRK4(np.array(x))
+        sus[i][0], inf[i][0], rec[i][0] = result
+
+
+#SIR Modell mit ode/odeint fur alle Städte
+def infectODEsolverAll():
+    for i in range(len(cities)):
+        x = [sus[i][0], inf[i][0], rec[i][0]]
+        result = infectODEsolver(np.array(x), 0)
+        sus[i][0], inf[i][0], rec[i][0] = result
 

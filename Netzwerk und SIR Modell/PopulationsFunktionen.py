@@ -61,7 +61,4 @@ def travelAirAll():
                 population[index] -= 1 / k * population[index] * pt
 
 
-beta = 1
-mu = 1
-gamma = 1
 
