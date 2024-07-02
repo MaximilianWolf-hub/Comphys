@@ -39,26 +39,29 @@ def travelAir(city):
 
 
 
-def travelLandAll():
+def travelLandAll(pop_list):  #Reisebewegung an Land braucht Liste als Input um zwischen
+                          #Reisebewegungen von Infizierten, Genesenen oder Suspects zu unterscheiden
     for i in cities:
         index = cities.index(i)
         L = travelLand(i)
         k = len(L)
         for j in L:
             index2 = cities.index(j)
-            population[index2] += 1 / k * population[index] * pt
-            population[index] -= 1 / k * population[index] * pt
+            pop_list[index2] += 1 / k * pop_list[index] * pt
+            pop_list[index] -= 1 / k * pop_list[index] * pt
+    return pop_list
 
-def travelAirAll():
+def travelAirAll(pop_list):         #Reisebewegung durch Luftverkehr braucht Liste als Input um zwischen
+                                #Reisebewegungen von Infizierten, Genesenen oder Suspects zu unterscheiden
     for i in airConnections[:, 0]:
         index = cities.index(i)
         L = travelAir(i)
         k = len(L)
-        if not L == []:
+        if k > 0:  # Prüfe, ob es Verbindungen gibt
             for j in L:
                 index2 = cities.index(j)
-                population[index2] += 1 / k * population[index] * pt
-                population[index] -= 1 / k * population[index] * pt
-
+                pop_list[index2] += 1 / k * pop_list[index] * pt
+                pop_list[index] -= 1 / k * pop_list[index] * pt
+    return pop_list
 
 
