@@ -1,5 +1,5 @@
 import numpy as np
-from city_data import cities, population, laender, breitengrad, laengengrad
+from city_data import cities
 
 landConnections = np.loadtxt("landConnections.txt", dtype=str, encoding="utf-8", skiprows=1, delimiter='\t')
 airConnections = np.loadtxt("airConnections.txt", dtype=str, encoding="utf-8", delimiter='\t', skiprows=1)
@@ -63,5 +63,4 @@ def travelAirAll(pop_list):         #Reisebewegung durch Luftverkehr braucht Lis
                 pop_list[index2] += 1 / k * pop_list[index] * pt
                 pop_list[index] -= 1 / k * pop_list[index] * pt
     return pop_list
-
 
