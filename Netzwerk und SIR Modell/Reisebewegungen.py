@@ -11,11 +11,15 @@ with open('allConnections.txt', 'r', encoding='utf-8') as f:
     # Iteriere über jede Zeile in der Datei
     for line in f:
         # Entferne eventuelle Leerzeichen am Anfang und Ende der Zeile und teile sie in Einträge auf
-        entries = line.strip().split()
+        entries = line.strip().split(',')
 
         # Füge die Einträge dieser Zeile zur Datenliste hinzu
         data.append(entries)
 
+
+
+#die Funktion travel fasst alle Reisebewegungen zusammen, indem sie die vorgefertigte Liste data mit ihren möglichen Reisebewegungen verwendet
+#durch Input einer Liste mit den jeweiligen Anzahlen an Infizierten/Suspekten/Genenesen können die Reisebewegungen schnell simuliert werden
 def travel(pop_list):
     for i in range(len(pop_list)):
         for j in range(1, len(data[i][:])):  # Starte bei 1, da data[i][0] die aktuelle Stadt ist

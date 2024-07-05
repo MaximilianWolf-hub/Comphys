@@ -1,5 +1,4 @@
 import numpy as np
-from PopulationsFunktionen import travelLandAll, travelAirAll
 from SIR_Funktionen import infectEulerAll, infectRK4All, infectODEsolverAll, sus, inf, rec
 from Reisebewegungen import travel
 
@@ -23,13 +22,19 @@ for i in range(365):
     inf_list = travel(inf_list)
     rec_list = travel(rec_list)
 
-    # Konvertiere Listen in NumPy-Arrays
-    sus_array = np.array(sus_list)
-    inf_array = np.array(inf_list)
-    rec_array = np.array(rec_list)
 
     # Simuliere Infektionen mit Euler-Verfahren
     infectODEsolverAll(sus_list, inf_list, rec_list)
-    print(i)
+    print('Tag:', i)
 
-print(inf_list)
+for i in range(len(sus_list)):
+    sus[i, 0] = sus_list[i]
+    inf[i, 0] = inf_list[i]
+    rec[i, 0] = rec_list[i]
+
+print('Suspects')
+print(sus)
+print('Infizierte')
+print(inf)
+print('Genesene')
+print(rec)
