@@ -1,5 +1,5 @@
 import numpy as np
-from city_data import cities
+from city_data import cities, population
 
 landConnections = np.loadtxt("landConnections.txt", dtype=str, encoding="utf-8", skiprows=1, delimiter='\t')
 airConnections = np.loadtxt("airConnections.txt", dtype=str, encoding="utf-8", delimiter='\t', skiprows=1)
@@ -43,24 +43,30 @@ def travelLandAll(pop_list):  #Reisebewegung an Land braucht Liste als Input um 
                           #Reisebewegungen von Infizierten, Genesenen oder Suspects zu unterscheiden
     for i in cities:
         index = cities.index(i)
-        L = travelLand(i)
-        k = len(L)
+        L = travelLand(i)   #allen Landreisezielen
+        sum = 0         #Summe Einwohner Landreiseziele
         for j in L:
             index2 = cities.index(j)
-            pop_list[index2] += 1 / k * pop_list[index] * pt
-            pop_list[index] -= 1 / k * pop_list[index] * pt
+            sum += population(index2)
+        for k in L:
+            index2 = cities.index(k)
+            pop_list[index2] += pt * pop_list(index) * pop_list(index2) / sum
+            pop_list[index] -= pt * pop_list(index) * pop_list(index2) / sum
     return pop_list
 
 def travelAirAll(pop_list):         #Reisebewegung durch Luftverkehr braucht Liste als Input um zwischen
                                 #Reisebewegungen von Infizierten, Genesenen oder Suspects zu unterscheiden
     for i in airConnections[:, 0]:
         index = cities.index(i)
-        L = travelAir(i)
-        k = len(L)
-        if k > 0:  # Prüfe, ob es Verbindungen gibt
-            for j in L:
-                index2 = cities.index(j)
-                pop_list[index2] += 1 / k * pop_list[index] * pt
-                pop_list[index] -= 1 / k * pop_list[index] * pt
+        L = travelAir(i)        #alle Luftreiseziele
+        sum = 0                 # Summe Einwhoner Luftreiseziele
+        for j in L:
+            index2 = cities.index(j)
+            sum += population(index2)
+        for k in L:
+            index2 = cities.index(k)
+            pop_list[index2] += pt * pop_list(index) * pop_list(index2) / sum
+            pop_list[index] -= pt * pop_list(index) * pop_list(index2) / sum
     return pop_list
 
+print(travelLand('REYKJAVIK'))

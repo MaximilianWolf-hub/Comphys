@@ -12,13 +12,16 @@ airConnections = np.loadtxt("airConnections.txt", dtype=str, encoding="utf-8", d
 #Wichtig: die einzelnen Städte sind durch Kommas abgetrennt, sodass Städte aus mehreren Wörten später auch erkannt werden
 with open('allConnections.txt', 'w', encoding='utf-8') as datei:
     for i in range(len(cities)):
+        city_name = cities[i]
         if population[i] > 1e6:
-            connections_luft = ','.join(travelAir(cities[i]))
-            connections_str = ','.join(travelLand(cities[i]))
-            datei.write(f'{cities[i]},{connections_str}\t{connections_luft}\n')
+            connections_luft = travelAir(city_name)
+            connections_str = travelLand(city_name)
+            all_connections = ','.join(connections_str + connections_luft)
+            datei.write(f'{city_name},{all_connections}\n')
         else:
-            connections_str = ','.join(travelLand(cities[i]))
-            datei.write(f'{cities[i]},{connections_str}\n')
+            connections_str = travelLand(city_name)
+            all_connections = ','.join(connections_str)
+            datei.write(f'{city_name},{all_connections}\n')
 
 
 

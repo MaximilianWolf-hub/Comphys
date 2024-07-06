@@ -22,12 +22,18 @@ with open('allConnections.txt', 'r', encoding='utf-8') as f:
 #durch Input einer Liste mit den jeweiligen Anzahlen an Infizierten/Suspekten/Genenesen können die Reisebewegungen schnell simuliert werden
 def travel(pop_list):
     for i in range(len(pop_list)):
+        pops = 0
         for j in range(1, len(data[i][:])):  # Starte bei 1, da data[i][0] die aktuelle Stadt ist
-            city_name = data[i][j]
+            city_name = data[i][j]           # Berechne Einwohner in allen möglichen Reisezielen
             if city_name in cities:
                 index = cities.index(city_name)
-                pop_list[index] += (1 / (len(data[i]) - 1)) * pt * pop_list[i]
-                pop_list[i] -= (1 / (len(data[i]) - 1)) * pt * pop_list[i]
+                pops += population[index]
+        for k in range(1, len(data[i][:])):  # Reise in Stadt abhängig von Einwohnerzahl der Zielstadt
+            city_name = data[i][k]
+            if city_name in cities:
+                index = cities.index(city_name)
+                pop_list[index] += (1 / (pops)) * pt * pop_list[i] * population[index]
+                pop_list[i] -= (1 / (pops)) * pt * pop_list[i] * population[index]
     return pop_list
 
 
