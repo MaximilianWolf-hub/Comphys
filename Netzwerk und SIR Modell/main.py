@@ -1,6 +1,6 @@
-import numpy as np
 from SIR_Funktionen import infectEulerAll, infectRK4All, infectODEsolverAll, sus, inf, rec
 from Reisebewegungen import travel
+from Europakarte import create_map
 
 second_column_list = sus[:, 1].tolist()
 index = second_column_list.index('LONDON')
@@ -32,9 +32,4 @@ for i in range(len(sus_list)):
     inf[i, 0] = inf_list[i]
     rec[i, 0] = rec_list[i]
 
-print('Suspects')
-print(sus)
-print('Infizierte')
-print(inf)
-print('Genesene')
-print(rec)
+create_map(sus_list, inf_list, rec_list)
