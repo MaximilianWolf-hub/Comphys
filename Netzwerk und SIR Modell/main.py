@@ -32,4 +32,5 @@ for i in range(len(sus_list)):
     inf[i, 0] = inf_list[i]
     rec[i, 0] = rec_list[i]
 
+#Erstelle Karte mit Daten nach geüwnschtem Zeitraum
 create_map(sus_list, inf_list, rec_list)
