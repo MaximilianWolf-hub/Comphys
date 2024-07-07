@@ -1,0 +1,45 @@
+import numpy as np
+import pandas as pd
+from scipy.optimize import curve_fit
+import matplotlib.pyplot as plt
+
+file_path = 'C:\\Users\\domin\\OneDrive\\Desktop\\FP\\Endgültig.txt'
+
+t = data['JD'].values
+S = data['V-C'].values
+
+Funktion zur Berechnung der Fourier-Reihe:
+
+def fourier_series(t, P, *coeffs):
+    Kmax = (len(coeffs) - 1) // 2
+    S0 = coeffs[0]
+    result = S0
+    for k in range(1, Kmax + 1):
+        Ck = coeffs[2 * k - 1]
+        Dk = coeffs[2 * k]
+        result += Ck * np.sin(2 * np.pi * k * t / P) + Dk * np.cos(2 * np.pi * k * t / P)
+    return result
+
+Kmax = 5  
+P0 = 3  #PeriodenDauer
+coeffs0 = [1] + [0.1] * (2 * Kmax)  
+
+#Fit
+popt, pcov = curve_fit(lambda t, P, *coeffs: fourier_series(t, P, *coeffs), t, S, p0=[P0] + coeffs0)
+
+P_fit = popt[0]
+coeffs_fit = popt[1:]
+
+S_fit = fourier_series(t, P_fit, *coeffs_fit)
+
+#Plot
+plt.figure(figsize=(10, 6))
+plt.scatter(t, S, label='Daten', color='blue')
+plt.plot(t, S_fit, label='Gefittete Fourier-Reihe', color='red')
+plt.xlabel('Julian Date (JD)')
+plt.ylabel('Magnitude (V-C)')
+plt.legend()
+plt.title('Fourier-Fit der Lichtkurve')
+plt.show()
+
+print(f"Gefittete Periodendauer: {P_fit}")
