@@ -11,7 +11,7 @@ S = data[:, 1]
 
 fft_coefficients = np.fft.fft(S)
 
-kmax = 10
+kmax = 20
 
 filtered_fft_coefficients = np.zeros_like(fft_coefficients)
 filtered_fft_coefficients[:kmax] = fft_coefficients[:kmax]
@@ -29,4 +29,3 @@ plt.ylabel('Magnitude (V-C)')
 plt.legend()
 plt.title('Fourier-Fit der Lichtkurve')
 plt.show()
-

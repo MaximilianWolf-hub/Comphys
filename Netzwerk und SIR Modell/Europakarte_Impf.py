@@ -2,7 +2,7 @@ import folium
 from city_data import cities, breitengrad, laengengrad
 
 
-def create_map(sus, inf, rec):
+def create_map(sus, inf, rec, vac):
     m = folium.Map(location=[51.1657, 10.4515], zoom_start=6)  # Deutschland, zentriert
 
     # Erstellen einer Liste mit allen wichtigen Parametern einer Stadt
@@ -14,7 +14,8 @@ def create_map(sus, inf, rec):
             'Längengrad': laengengrad[i],
             'S-Population': sus[i],
             'Infizierte': inf[i],
-            'Genesene': rec[i]
+            'Genesene': rec[i],
+            'Geimpfte': vac[i]
         })
 
     # Hinzufügen von Markern zur Karte
@@ -26,12 +27,13 @@ def create_map(sus, inf, rec):
                 f"S-Population: {city['S-Population']}<br>"
                 f"Infizierte: {city['Infizierte']}<br>"
                 f"Genesene: {city['Genesene']}"
+                f"Geimpfte: {city['Geimpfte']}"
             ),
             tooltip=city['name']
         ).add_to(m)
 
     # Karte speichern
-    m.save('map_SIR_normal.html')
+    m.save('map_with_vaccination.html')
 
 
 
