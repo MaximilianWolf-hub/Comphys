@@ -33,7 +33,7 @@ def encode(sus, inf, rec, name):
     iframe = IFrame(html, width=500, height=300)
     return iframe
 
-def create_map(sus, rec, inf):
+def create_map(sus, inf, rec):
     m = folium.Map(location=[51.1657, 10.4515], zoom_start=6)  # Deutschland, zentriert
 
     # Erstellen einer Liste mit allen wichtigen Parametern einer Stadt

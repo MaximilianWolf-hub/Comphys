@@ -25,7 +25,7 @@ all_infections = np.array([inf_list])
 all_recovered = np.array([rec_list])
 
 # Simulation über 365 Tage
-for i in range(10):
+for i in range(365):
     # Reisebewegungen simulieren
     sus_list = travel(sus_list, pt)
     inf_list = travel(inf_list, pt)
@@ -48,3 +48,5 @@ for i in range(len(sus_list)):
 
 
 #Erstelle Karte mit Daten nach geüwnschtem Zeitraum
+create_map(all_suspects, all_infections, all_recovered)
+
