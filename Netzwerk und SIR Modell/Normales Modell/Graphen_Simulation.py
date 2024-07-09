@@ -1,8 +1,9 @@
-from SIR_Funktionen import infectODEsolverAll, sus, inf, rec
-from Reisebewegungen import travel
-import matplotlib.pyplot as plt
 import numpy as np
-from New_Europakerte import create_map
+import matplotlib.pyplot as plt
+from SIR_Funktionen import infectODEsolverAll, sus, inf, rec, infectRK4All, infectEulerAll
+from Reisebewegungen import travel
+
+
 
 second_column_list = sus[:, 1].tolist()
 index = second_column_list.index('LONDON')
@@ -36,17 +37,17 @@ for i in range(365):
     all_recovered = np.vstack((all_recovered, rec_list))
 
     # Simuliere Infektionen mit Euler-Verfahren
-    infectODEsolverAll(sus_list, inf_list, rec_list)
+    infectRK4All(sus_list, inf_list, rec_list)
     print('Tag:', i)
 
+plt.plot(all_suspects[:, index], label='S-Population')
+plt.plot(all_infections[:, index], label='Infektionen')
+plt.plot(all_recovered[:, index], label='Genesene')
+plt.yscale('log')
+plt.ylabel('Anzahl an Personen')
+plt.xlabel('Tage seit Infektionsbeginn')
+plt.legend()
+plt.savefig('SIR_normal_rk4.jpeg')
+plt.show()
 
-
-for i in range(len(sus_list)):
-    sus[i, 0] = sus_list[i]
-    inf[i, 0] = inf_list[i]
-    rec[i, 0] = rec_list[i]
-
-
-#Erstelle Karte mit Daten nach geüwnschtem Zeitraum
-create_map(all_suspects, all_infections, all_recovered)
 

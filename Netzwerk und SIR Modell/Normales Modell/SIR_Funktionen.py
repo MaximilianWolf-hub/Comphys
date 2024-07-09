@@ -13,8 +13,8 @@ rec = np.array(combined, dtype=object)        #dtype Object, damit wir zwei vers
                                               #speichern können (Floats - erste Spalte, Strings - zweite Spalte)
 
 mu = 3e-5
-beta = 0.1
-gamma = 0.07
+beta = 0
+gamma = 0
 
 
 def SIR(x, t=0):
