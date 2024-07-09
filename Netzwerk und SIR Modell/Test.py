@@ -1,26 +1,38 @@
+import folium
+from folium import IFrame
+import base64
+from io import BytesIO
 import matplotlib.pyplot as plt
-import cartopy.crs as ccrs
-import cartopy.feature as cfeature
 
-# Create a figure and an axis with a specific projection
-fig = plt.figure(figsize=(10, 5))
-ax = plt.axes(projection=ccrs.PlateCarree())
+# Erstelle eine Beispielgrafik
+def create_plot():
+    fig, ax = plt.subplots()
+    ax.plot([0, 1, 2, 3], [10, 20, 25, 30])
+    ax.set_title('Example Plot')
 
-# Set the extent to the European region (min lon, max lon, min lat, max lat)
-ax.set_extent([-30, 60, 30, 75], crs=ccrs.PlateCarree())
+    # Speicher die Grafik in einem BytesIO-Objekt
+    buf = BytesIO()
+    plt.savefig(buf, format='png')
+    buf.seek(0)
+    return buf
 
-# Add coastlines and borders
-ax.coastlines(resolution='50m')
-ax.add_feature(cfeature.BORDERS, linestyle=':')
+# Erstelle eine Folium-Karte
+map = folium.Map(location=[45.5236, -122.6750], zoom_start=13)
 
-# Add gridlines
-ax.gridlines(draw_labels=True)
+# Erstelle die Grafik und encode sie in base64
+plot_buf = create_plot()
+plot_base64 = base64.b64encode(plot_buf.read()).decode('utf-8')
+plot_buf.close()
 
-# Optionally, add land and ocean features with color
-ax.add_feature(cfeature.LAND, edgecolor='black', facecolor='lightgray')
-ax.add_feature(cfeature.OCEAN, edgecolor='black', facecolor='lightblue')
+# Erstelle ein HTML-iframe mit der Grafik
+html = f'<img src="data:image/png;base64,{plot_base64}">'
+iframe = IFrame(html, width=500, height=300)
 
-# Display the map
-plt.title('Map of Europe')
-plt.show()
+# Füge einen Marker mit der Grafik hinzu
+folium.Marker(
+    [45.5236, -122.6750],
+    popup=folium.Popup(iframe)
+).add_to(map)
 
+# Speichere die Karte als HTML-Datei
+map.save('map_with_plot.html')

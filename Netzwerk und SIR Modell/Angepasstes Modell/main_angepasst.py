@@ -20,7 +20,7 @@ pt = 0.01
 
 
 # Simulation über 365 Tage
-for i in range(365):
+for i in range(60):
     # Reisebewegungen simulieren
     sus_list = travel(sus_list, pt)
     inf_list = travel(inf_list, pt)

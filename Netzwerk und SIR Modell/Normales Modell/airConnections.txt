@@ -1,0 +1,821 @@
+Stadt1	Stadt2
+WIEN	MINSK
+WIEN	BRUSSEL
+WIEN	SOFIA
+WIEN	PRAHA
+WIEN	Lille
+WIEN	Lyon
+WIEN	Marseille
+WIEN	PARIS
+WIEN	BERLIN
+WIEN	Hamburg
+WIEN	Köln
+WIEN	München
+WIEN	BUDAPEST
+WIEN	Milano
+WIEN	ROMA
+WIEN	WARSZAWA
+WIEN	BUCURESTI
+WIEN	Chelyabinsk
+WIEN	Ekaterinburg
+WIEN	Kazan
+WIEN	Krasnoyarsk
+WIEN	MOSKVA
+WIEN	Nizhny Novgorod
+WIEN	Novosibirsk
+WIEN	Omsk
+WIEN	Perm
+WIEN	Rostov-na-Donu
+WIEN	Samara
+WIEN	St. Petersburg
+WIEN	Ufa
+WIEN	Volgograd
+WIEN	BEOGRAD (BELGRADE)
+WIEN	Barcelona
+WIEN	MADRID
+WIEN	Zürich
+WIEN	Kharkiv
+WIEN	KYIV
+WIEN	Birmingham
+WIEN	Glasgow
+WIEN	LONDON
+MINSK	BRUSSEL
+MINSK	SOFIA
+MINSK	PRAHA
+MINSK	Lille
+MINSK	Lyon
+MINSK	Marseille
+MINSK	PARIS
+MINSK	BERLIN
+MINSK	Hamburg
+MINSK	Köln
+MINSK	München
+MINSK	BUDAPEST
+MINSK	Milano
+MINSK	ROMA
+MINSK	WARSZAWA
+MINSK	BUCURESTI
+MINSK	Chelyabinsk
+MINSK	Ekaterinburg
+MINSK	Kazan
+MINSK	Krasnoyarsk
+MINSK	MOSKVA
+MINSK	Nizhny Novgorod
+MINSK	Novosibirsk
+MINSK	Omsk
+MINSK	Perm
+MINSK	Rostov-na-Donu
+MINSK	Samara
+MINSK	St. Petersburg
+MINSK	Ufa
+MINSK	Volgograd
+MINSK	BEOGRAD (BELGRADE)
+MINSK	Barcelona
+MINSK	MADRID
+MINSK	Zürich
+MINSK	Kharkiv
+MINSK	KYIV
+MINSK	Birmingham
+MINSK	Glasgow
+MINSK	LONDON
+BRUSSEL	SOFIA
+BRUSSEL	PRAHA
+BRUSSEL	Lille
+BRUSSEL	Lyon
+BRUSSEL	Marseille
+BRUSSEL	PARIS
+BRUSSEL	BERLIN
+BRUSSEL	Hamburg
+BRUSSEL	Köln
+BRUSSEL	München
+BRUSSEL	BUDAPEST
+BRUSSEL	Milano
+BRUSSEL	ROMA
+BRUSSEL	WARSZAWA
+BRUSSEL	BUCURESTI
+BRUSSEL	Chelyabinsk
+BRUSSEL	Ekaterinburg
+BRUSSEL	Kazan
+BRUSSEL	Krasnoyarsk
+BRUSSEL	MOSKVA
+BRUSSEL	Nizhny Novgorod
+BRUSSEL	Novosibirsk
+BRUSSEL	Omsk
+BRUSSEL	Perm
+BRUSSEL	Rostov-na-Donu
+BRUSSEL	Samara
+BRUSSEL	St. Petersburg
+BRUSSEL	Ufa
+BRUSSEL	Volgograd
+BRUSSEL	BEOGRAD (BELGRADE)
+BRUSSEL	Barcelona
+BRUSSEL	MADRID
+BRUSSEL	Zürich
+BRUSSEL	Kharkiv
+BRUSSEL	KYIV
+BRUSSEL	Birmingham
+BRUSSEL	Glasgow
+BRUSSEL	LONDON
+SOFIA	PRAHA
+SOFIA	Lille
+SOFIA	Lyon
+SOFIA	Marseille
+SOFIA	PARIS
+SOFIA	BERLIN
+SOFIA	Hamburg
+SOFIA	Köln
+SOFIA	München
+SOFIA	BUDAPEST
+SOFIA	Milano
+SOFIA	ROMA
+SOFIA	WARSZAWA
+SOFIA	BUCURESTI
+SOFIA	Chelyabinsk
+SOFIA	Ekaterinburg
+SOFIA	Kazan
+SOFIA	Krasnoyarsk
+SOFIA	MOSKVA
+SOFIA	Nizhny Novgorod
+SOFIA	Novosibirsk
+SOFIA	Omsk
+SOFIA	Perm
+SOFIA	Rostov-na-Donu
+SOFIA	Samara
+SOFIA	St. Petersburg
+SOFIA	Ufa
+SOFIA	Volgograd
+SOFIA	BEOGRAD (BELGRADE)
+SOFIA	Barcelona
+SOFIA	MADRID
+SOFIA	Zürich
+SOFIA	Kharkiv
+SOFIA	KYIV
+SOFIA	Birmingham
+SOFIA	Glasgow
+SOFIA	LONDON
+PRAHA	Lille
+PRAHA	Lyon
+PRAHA	Marseille
+PRAHA	PARIS
+PRAHA	BERLIN
+PRAHA	Hamburg
+PRAHA	Köln
+PRAHA	München
+PRAHA	BUDAPEST
+PRAHA	Milano
+PRAHA	ROMA
+PRAHA	WARSZAWA
+PRAHA	BUCURESTI
+PRAHA	Chelyabinsk
+PRAHA	Ekaterinburg
+PRAHA	Kazan
+PRAHA	Krasnoyarsk
+PRAHA	MOSKVA
+PRAHA	Nizhny Novgorod
+PRAHA	Novosibirsk
+PRAHA	Omsk
+PRAHA	Perm
+PRAHA	Rostov-na-Donu
+PRAHA	Samara
+PRAHA	St. Petersburg
+PRAHA	Ufa
+PRAHA	Volgograd
+PRAHA	BEOGRAD (BELGRADE)
+PRAHA	Barcelona
+PRAHA	MADRID
+PRAHA	Zürich
+PRAHA	Kharkiv
+PRAHA	KYIV
+PRAHA	Birmingham
+PRAHA	Glasgow
+PRAHA	LONDON
+Lille	Lyon
+Lille	Marseille
+Lille	PARIS
+Lille	BERLIN
+Lille	Hamburg
+Lille	Köln
+Lille	München
+Lille	BUDAPEST
+Lille	Milano
+Lille	ROMA
+Lille	WARSZAWA
+Lille	BUCURESTI
+Lille	Chelyabinsk
+Lille	Ekaterinburg
+Lille	Kazan
+Lille	Krasnoyarsk
+Lille	MOSKVA
+Lille	Nizhny Novgorod
+Lille	Novosibirsk
+Lille	Omsk
+Lille	Perm
+Lille	Rostov-na-Donu
+Lille	Samara
+Lille	St. Petersburg
+Lille	Ufa
+Lille	Volgograd
+Lille	BEOGRAD (BELGRADE)
+Lille	Barcelona
+Lille	MADRID
+Lille	Zürich
+Lille	Kharkiv
+Lille	KYIV
+Lille	Birmingham
+Lille	Glasgow
+Lille	LONDON
+Lyon	Marseille
+Lyon	PARIS
+Lyon	BERLIN
+Lyon	Hamburg
+Lyon	Köln
+Lyon	München
+Lyon	BUDAPEST
+Lyon	Milano
+Lyon	ROMA
+Lyon	WARSZAWA
+Lyon	BUCURESTI
+Lyon	Chelyabinsk
+Lyon	Ekaterinburg
+Lyon	Kazan
+Lyon	Krasnoyarsk
+Lyon	MOSKVA
+Lyon	Nizhny Novgorod
+Lyon	Novosibirsk
+Lyon	Omsk
+Lyon	Perm
+Lyon	Rostov-na-Donu
+Lyon	Samara
+Lyon	St. Petersburg
+Lyon	Ufa
+Lyon	Volgograd
+Lyon	BEOGRAD (BELGRADE)
+Lyon	Barcelona
+Lyon	MADRID
+Lyon	Zürich
+Lyon	Kharkiv
+Lyon	KYIV
+Lyon	Birmingham
+Lyon	Glasgow
+Lyon	LONDON
+Marseille	PARIS
+Marseille	BERLIN
+Marseille	Hamburg
+Marseille	Köln
+Marseille	München
+Marseille	BUDAPEST
+Marseille	Milano
+Marseille	ROMA
+Marseille	WARSZAWA
+Marseille	BUCURESTI
+Marseille	Chelyabinsk
+Marseille	Ekaterinburg
+Marseille	Kazan
+Marseille	Krasnoyarsk
+Marseille	MOSKVA
+Marseille	Nizhny Novgorod
+Marseille	Novosibirsk
+Marseille	Omsk
+Marseille	Perm
+Marseille	Rostov-na-Donu
+Marseille	Samara
+Marseille	St. Petersburg
+Marseille	Ufa
+Marseille	Volgograd
+Marseille	BEOGRAD (BELGRADE)
+Marseille	Barcelona
+Marseille	MADRID
+Marseille	Zürich
+Marseille	Kharkiv
+Marseille	KYIV
+Marseille	Birmingham
+Marseille	Glasgow
+Marseille	LONDON
+PARIS	BERLIN
+PARIS	Hamburg
+PARIS	Köln
+PARIS	München
+PARIS	BUDAPEST
+PARIS	Milano
+PARIS	ROMA
+PARIS	WARSZAWA
+PARIS	BUCURESTI
+PARIS	Chelyabinsk
+PARIS	Ekaterinburg
+PARIS	Kazan
+PARIS	Krasnoyarsk
+PARIS	MOSKVA
+PARIS	Nizhny Novgorod
+PARIS	Novosibirsk
+PARIS	Omsk
+PARIS	Perm
+PARIS	Rostov-na-Donu
+PARIS	Samara
+PARIS	St. Petersburg
+PARIS	Ufa
+PARIS	Volgograd
+PARIS	BEOGRAD (BELGRADE)
+PARIS	Barcelona
+PARIS	MADRID
+PARIS	Zürich
+PARIS	Kharkiv
+PARIS	KYIV
+PARIS	Birmingham
+PARIS	Glasgow
+PARIS	LONDON
+BERLIN	Hamburg
+BERLIN	Köln
+BERLIN	München
+BERLIN	BUDAPEST
+BERLIN	Milano
+BERLIN	ROMA
+BERLIN	WARSZAWA
+BERLIN	BUCURESTI
+BERLIN	Chelyabinsk
+BERLIN	Ekaterinburg
+BERLIN	Kazan
+BERLIN	Krasnoyarsk
+BERLIN	MOSKVA
+BERLIN	Nizhny Novgorod
+BERLIN	Novosibirsk
+BERLIN	Omsk
+BERLIN	Perm
+BERLIN	Rostov-na-Donu
+BERLIN	Samara
+BERLIN	St. Petersburg
+BERLIN	Ufa
+BERLIN	Volgograd
+BERLIN	BEOGRAD (BELGRADE)
+BERLIN	Barcelona
+BERLIN	MADRID
+BERLIN	Zürich
+BERLIN	Kharkiv
+BERLIN	KYIV
+BERLIN	Birmingham
+BERLIN	Glasgow
+BERLIN	LONDON
+Hamburg	Köln
+Hamburg	München
+Hamburg	BUDAPEST
+Hamburg	Milano
+Hamburg	ROMA
+Hamburg	WARSZAWA
+Hamburg	BUCURESTI
+Hamburg	Chelyabinsk
+Hamburg	Ekaterinburg
+Hamburg	Kazan
+Hamburg	Krasnoyarsk
+Hamburg	MOSKVA
+Hamburg	Nizhny Novgorod
+Hamburg	Novosibirsk
+Hamburg	Omsk
+Hamburg	Perm
+Hamburg	Rostov-na-Donu
+Hamburg	Samara
+Hamburg	St. Petersburg
+Hamburg	Ufa
+Hamburg	Volgograd
+Hamburg	BEOGRAD (BELGRADE)
+Hamburg	Barcelona
+Hamburg	MADRID
+Hamburg	Zürich
+Hamburg	Kharkiv
+Hamburg	KYIV
+Hamburg	Birmingham
+Hamburg	Glasgow
+Hamburg	LONDON
+Köln	München
+Köln	BUDAPEST
+Köln	Milano
+Köln	ROMA
+Köln	WARSZAWA
+Köln	BUCURESTI
+Köln	Chelyabinsk
+Köln	Ekaterinburg
+Köln	Kazan
+Köln	Krasnoyarsk
+Köln	MOSKVA
+Köln	Nizhny Novgorod
+Köln	Novosibirsk
+Köln	Omsk
+Köln	Perm
+Köln	Rostov-na-Donu
+Köln	Samara
+Köln	St. Petersburg
+Köln	Ufa
+Köln	Volgograd
+Köln	BEOGRAD (BELGRADE)
+Köln	Barcelona
+Köln	MADRID
+Köln	Zürich
+Köln	Kharkiv
+Köln	KYIV
+Köln	Birmingham
+Köln	Glasgow
+Köln	LONDON
+München	BUDAPEST
+München	Milano
+München	ROMA
+München	WARSZAWA
+München	BUCURESTI
+München	Chelyabinsk
+München	Ekaterinburg
+München	Kazan
+München	Krasnoyarsk
+München	MOSKVA
+München	Nizhny Novgorod
+München	Novosibirsk
+München	Omsk
+München	Perm
+München	Rostov-na-Donu
+München	Samara
+München	St. Petersburg
+München	Ufa
+München	Volgograd
+München	BEOGRAD (BELGRADE)
+München	Barcelona
+München	MADRID
+München	Zürich
+München	Kharkiv
+München	KYIV
+München	Birmingham
+München	Glasgow
+München	LONDON
+BUDAPEST	Milano
+BUDAPEST	ROMA
+BUDAPEST	WARSZAWA
+BUDAPEST	BUCURESTI
+BUDAPEST	Chelyabinsk
+BUDAPEST	Ekaterinburg
+BUDAPEST	Kazan
+BUDAPEST	Krasnoyarsk
+BUDAPEST	MOSKVA
+BUDAPEST	Nizhny Novgorod
+BUDAPEST	Novosibirsk
+BUDAPEST	Omsk
+BUDAPEST	Perm
+BUDAPEST	Rostov-na-Donu
+BUDAPEST	Samara
+BUDAPEST	St. Petersburg
+BUDAPEST	Ufa
+BUDAPEST	Volgograd
+BUDAPEST	BEOGRAD (BELGRADE)
+BUDAPEST	Barcelona
+BUDAPEST	MADRID
+BUDAPEST	Zürich
+BUDAPEST	Kharkiv
+BUDAPEST	KYIV
+BUDAPEST	Birmingham
+BUDAPEST	Glasgow
+BUDAPEST	LONDON
+Milano	ROMA
+Milano	WARSZAWA
+Milano	BUCURESTI
+Milano	Chelyabinsk
+Milano	Ekaterinburg
+Milano	Kazan
+Milano	Krasnoyarsk
+Milano	MOSKVA
+Milano	Nizhny Novgorod
+Milano	Novosibirsk
+Milano	Omsk
+Milano	Perm
+Milano	Rostov-na-Donu
+Milano	Samara
+Milano	St. Petersburg
+Milano	Ufa
+Milano	Volgograd
+Milano	BEOGRAD (BELGRADE)
+Milano	Barcelona
+Milano	MADRID
+Milano	Zürich
+Milano	Kharkiv
+Milano	KYIV
+Milano	Birmingham
+Milano	Glasgow
+Milano	LONDON
+ROMA	WARSZAWA
+ROMA	BUCURESTI
+ROMA	Chelyabinsk
+ROMA	Ekaterinburg
+ROMA	Kazan
+ROMA	Krasnoyarsk
+ROMA	MOSKVA
+ROMA	Nizhny Novgorod
+ROMA	Novosibirsk
+ROMA	Omsk
+ROMA	Perm
+ROMA	Rostov-na-Donu
+ROMA	Samara
+ROMA	St. Petersburg
+ROMA	Ufa
+ROMA	Volgograd
+ROMA	BEOGRAD (BELGRADE)
+ROMA	Barcelona
+ROMA	MADRID
+ROMA	Zürich
+ROMA	Kharkiv
+ROMA	KYIV
+ROMA	Birmingham
+ROMA	Glasgow
+ROMA	LONDON
+WARSZAWA	BUCURESTI
+WARSZAWA	Chelyabinsk
+WARSZAWA	Ekaterinburg
+WARSZAWA	Kazan
+WARSZAWA	Krasnoyarsk
+WARSZAWA	MOSKVA
+WARSZAWA	Nizhny Novgorod
+WARSZAWA	Novosibirsk
+WARSZAWA	Omsk
+WARSZAWA	Perm
+WARSZAWA	Rostov-na-Donu
+WARSZAWA	Samara
+WARSZAWA	St. Petersburg
+WARSZAWA	Ufa
+WARSZAWA	Volgograd
+WARSZAWA	BEOGRAD (BELGRADE)
+WARSZAWA	Barcelona
+WARSZAWA	MADRID
+WARSZAWA	Zürich
+WARSZAWA	Kharkiv
+WARSZAWA	KYIV
+WARSZAWA	Birmingham
+WARSZAWA	Glasgow
+WARSZAWA	LONDON
+BUCURESTI	Chelyabinsk
+BUCURESTI	Ekaterinburg
+BUCURESTI	Kazan
+BUCURESTI	Krasnoyarsk
+BUCURESTI	MOSKVA
+BUCURESTI	Nizhny Novgorod
+BUCURESTI	Novosibirsk
+BUCURESTI	Omsk
+BUCURESTI	Perm
+BUCURESTI	Rostov-na-Donu
+BUCURESTI	Samara
+BUCURESTI	St. Petersburg
+BUCURESTI	Ufa
+BUCURESTI	Volgograd
+BUCURESTI	BEOGRAD (BELGRADE)
+BUCURESTI	Barcelona
+BUCURESTI	MADRID
+BUCURESTI	Zürich
+BUCURESTI	Kharkiv
+BUCURESTI	KYIV
+BUCURESTI	Birmingham
+BUCURESTI	Glasgow
+BUCURESTI	LONDON
+Chelyabinsk	Ekaterinburg
+Chelyabinsk	Kazan
+Chelyabinsk	Krasnoyarsk
+Chelyabinsk	MOSKVA
+Chelyabinsk	Nizhny Novgorod
+Chelyabinsk	Novosibirsk
+Chelyabinsk	Omsk
+Chelyabinsk	Perm
+Chelyabinsk	Rostov-na-Donu
+Chelyabinsk	Samara
+Chelyabinsk	St. Petersburg
+Chelyabinsk	Ufa
+Chelyabinsk	Volgograd
+Chelyabinsk	BEOGRAD (BELGRADE)
+Chelyabinsk	Barcelona
+Chelyabinsk	MADRID
+Chelyabinsk	Zürich
+Chelyabinsk	Kharkiv
+Chelyabinsk	KYIV
+Chelyabinsk	Birmingham
+Chelyabinsk	Glasgow
+Chelyabinsk	LONDON
+Ekaterinburg	Kazan
+Ekaterinburg	Krasnoyarsk
+Ekaterinburg	MOSKVA
+Ekaterinburg	Nizhny Novgorod
+Ekaterinburg	Novosibirsk
+Ekaterinburg	Omsk
+Ekaterinburg	Perm
+Ekaterinburg	Rostov-na-Donu
+Ekaterinburg	Samara
+Ekaterinburg	St. Petersburg
+Ekaterinburg	Ufa
+Ekaterinburg	Volgograd
+Ekaterinburg	BEOGRAD (BELGRADE)
+Ekaterinburg	Barcelona
+Ekaterinburg	MADRID
+Ekaterinburg	Zürich
+Ekaterinburg	Kharkiv
+Ekaterinburg	KYIV
+Ekaterinburg	Birmingham
+Ekaterinburg	Glasgow
+Ekaterinburg	LONDON
+Kazan	Krasnoyarsk
+Kazan	MOSKVA
+Kazan	Nizhny Novgorod
+Kazan	Novosibirsk
+Kazan	Omsk
+Kazan	Perm
+Kazan	Rostov-na-Donu
+Kazan	Samara
+Kazan	St. Petersburg
+Kazan	Ufa
+Kazan	Volgograd
+Kazan	BEOGRAD (BELGRADE)
+Kazan	Barcelona
+Kazan	MADRID
+Kazan	Zürich
+Kazan	Kharkiv
+Kazan	KYIV
+Kazan	Birmingham
+Kazan	Glasgow
+Kazan	LONDON
+Krasnoyarsk	MOSKVA
+Krasnoyarsk	Nizhny Novgorod
+Krasnoyarsk	Novosibirsk
+Krasnoyarsk	Omsk
+Krasnoyarsk	Perm
+Krasnoyarsk	Rostov-na-Donu
+Krasnoyarsk	Samara
+Krasnoyarsk	St. Petersburg
+Krasnoyarsk	Ufa
+Krasnoyarsk	Volgograd
+Krasnoyarsk	BEOGRAD (BELGRADE)
+Krasnoyarsk	Barcelona
+Krasnoyarsk	MADRID
+Krasnoyarsk	Zürich
+Krasnoyarsk	Kharkiv
+Krasnoyarsk	KYIV
+Krasnoyarsk	Birmingham
+Krasnoyarsk	Glasgow
+Krasnoyarsk	LONDON
+MOSKVA	Nizhny Novgorod
+MOSKVA	Novosibirsk
+MOSKVA	Omsk
+MOSKVA	Perm
+MOSKVA	Rostov-na-Donu
+MOSKVA	Samara
+MOSKVA	St. Petersburg
+MOSKVA	Ufa
+MOSKVA	Volgograd
+MOSKVA	BEOGRAD (BELGRADE)
+MOSKVA	Barcelona
+MOSKVA	MADRID
+MOSKVA	Zürich
+MOSKVA	Kharkiv
+MOSKVA	KYIV
+MOSKVA	Birmingham
+MOSKVA	Glasgow
+MOSKVA	LONDON
+Nizhny Novgorod	Novosibirsk
+Nizhny Novgorod	Omsk
+Nizhny Novgorod	Perm
+Nizhny Novgorod	Rostov-na-Donu
+Nizhny Novgorod	Samara
+Nizhny Novgorod	St. Petersburg
+Nizhny Novgorod	Ufa
+Nizhny Novgorod	Volgograd
+Nizhny Novgorod	BEOGRAD (BELGRADE)
+Nizhny Novgorod	Barcelona
+Nizhny Novgorod	MADRID
+Nizhny Novgorod	Zürich
+Nizhny Novgorod	Kharkiv
+Nizhny Novgorod	KYIV
+Nizhny Novgorod	Birmingham
+Nizhny Novgorod	Glasgow
+Nizhny Novgorod	LONDON
+Novosibirsk	Omsk
+Novosibirsk	Perm
+Novosibirsk	Rostov-na-Donu
+Novosibirsk	Samara
+Novosibirsk	St. Petersburg
+Novosibirsk	Ufa
+Novosibirsk	Volgograd
+Novosibirsk	BEOGRAD (BELGRADE)
+Novosibirsk	Barcelona
+Novosibirsk	MADRID
+Novosibirsk	Zürich
+Novosibirsk	Kharkiv
+Novosibirsk	KYIV
+Novosibirsk	Birmingham
+Novosibirsk	Glasgow
+Novosibirsk	LONDON
+Omsk	Perm
+Omsk	Rostov-na-Donu
+Omsk	Samara
+Omsk	St. Petersburg
+Omsk	Ufa
+Omsk	Volgograd
+Omsk	BEOGRAD (BELGRADE)
+Omsk	Barcelona
+Omsk	MADRID
+Omsk	Zürich
+Omsk	Kharkiv
+Omsk	KYIV
+Omsk	Birmingham
+Omsk	Glasgow
+Omsk	LONDON
+Perm	Rostov-na-Donu
+Perm	Samara
+Perm	St. Petersburg
+Perm	Ufa
+Perm	Volgograd
+Perm	BEOGRAD (BELGRADE)
+Perm	Barcelona
+Perm	MADRID
+Perm	Zürich
+Perm	Kharkiv
+Perm	KYIV
+Perm	Birmingham
+Perm	Glasgow
+Perm	LONDON
+Rostov-na-Donu	Samara
+Rostov-na-Donu	St. Petersburg
+Rostov-na-Donu	Ufa
+Rostov-na-Donu	Volgograd
+Rostov-na-Donu	BEOGRAD (BELGRADE)
+Rostov-na-Donu	Barcelona
+Rostov-na-Donu	MADRID
+Rostov-na-Donu	Zürich
+Rostov-na-Donu	Kharkiv
+Rostov-na-Donu	KYIV
+Rostov-na-Donu	Birmingham
+Rostov-na-Donu	Glasgow
+Rostov-na-Donu	LONDON
+Samara	St. Petersburg
+Samara	Ufa
+Samara	Volgograd
+Samara	BEOGRAD (BELGRADE)
+Samara	Barcelona
+Samara	MADRID
+Samara	Zürich
+Samara	Kharkiv
+Samara	KYIV
+Samara	Birmingham
+Samara	Glasgow
+Samara	LONDON
+St. Petersburg	Ufa
+St. Petersburg	Volgograd
+St. Petersburg	BEOGRAD (BELGRADE)
+St. Petersburg	Barcelona
+St. Petersburg	MADRID
+St. Petersburg	Zürich
+St. Petersburg	Kharkiv
+St. Petersburg	KYIV
+St. Petersburg	Birmingham
+St. Petersburg	Glasgow
+St. Petersburg	LONDON
+Ufa	Volgograd
+Ufa	BEOGRAD (BELGRADE)
+Ufa	Barcelona
+Ufa	MADRID
+Ufa	Zürich
+Ufa	Kharkiv
+Ufa	KYIV
+Ufa	Birmingham
+Ufa	Glasgow
+Ufa	LONDON
+Volgograd	BEOGRAD (BELGRADE)
+Volgograd	Barcelona
+Volgograd	MADRID
+Volgograd	Zürich
+Volgograd	Kharkiv
+Volgograd	KYIV
+Volgograd	Birmingham
+Volgograd	Glasgow
+Volgograd	LONDON
+BEOGRAD (BELGRADE)	Barcelona
+BEOGRAD (BELGRADE)	MADRID
+BEOGRAD (BELGRADE)	Zürich
+BEOGRAD (BELGRADE)	Kharkiv
+BEOGRAD (BELGRADE)	KYIV
+BEOGRAD (BELGRADE)	Birmingham
+BEOGRAD (BELGRADE)	Glasgow
+BEOGRAD (BELGRADE)	LONDON
+Barcelona	MADRID
+Barcelona	Zürich
+Barcelona	Kharkiv
+Barcelona	KYIV
+Barcelona	Birmingham
+Barcelona	Glasgow
+Barcelona	LONDON
+MADRID	Zürich
+MADRID	Kharkiv
+MADRID	KYIV
+MADRID	Birmingham
+MADRID	Glasgow
+MADRID	LONDON
+Zürich	Kharkiv
+Zürich	KYIV
+Zürich	Birmingham
+Zürich	Glasgow
+Zürich	LONDON
+Kharkiv	KYIV
+Kharkiv	Birmingham
+Kharkiv	Glasgow
+Kharkiv	LONDON
+KYIV	Birmingham
+KYIV	Glasgow
+KYIV	LONDON
+Birmingham	Glasgow
+Birmingham	LONDON
+Glasgow	LONDON
