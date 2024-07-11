@@ -12,12 +12,12 @@ inf = np.array(combined, dtype=object)        #denn jeder kann anfangs infiziert
 rec = np.array(combined, dtype=object)        #dtype Object, damit wir zwei verschiedene Datentypen im Array
                                               #speichern können (Floats - erste Spalte, Strings - zweite Spalte)
 
-mu = 3e-5
-beta = 0
+mu = 3e-5           #das sind die Parameter unserer Epedemie, die wir hier anpassen können
+beta = 0            # beta ist der Ansteckungsparameter, mu die Sterbe- und Reproduktionsrate und gamma die Erhohlungsrate
 gamma = 0
 
 
-def SIR(x, t=0):
+def SIR(x, t=0):        # diese DGL möchten wir numerisch lösen
     S, I, R = x
     N = S + I + R
     dS = - beta * S * I / N + mu * (N - S)
@@ -26,14 +26,14 @@ def SIR(x, t=0):
     return [dS, dI, dR]
 
 
-#Eulerverfahren
+#Eulerverfahren für eine Stadt
 def infectEuler(x):
     h = 1
     x += h * np.array(SIR(x))
     return x
 
 
-#Runge-Kutta-Verfahren vierter Ordnung
+#Runge-Kutta-Verfahren vierter Ordnung für eine Stadt
 def infectRK4(x):
     h = 1
     x = np.array(x)  # Sicherstellen, dass x ein numpy-Array ist
@@ -45,7 +45,7 @@ def infectRK4(x):
     return x
 
 
-#Nutzen der Ode-Int Methode von Scipy
+#Nutzen der Ode-Int Methode von Scipy für eine Stadt
 def infectODEsolver(x, t):
     deltat = np.array([t, t + 1], dtype=float)
     x = odeint(SIR, x, deltat)

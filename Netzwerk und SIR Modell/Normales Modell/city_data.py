@@ -1,5 +1,7 @@
 import numpy as np
 
+
+#wir lesen die vorgegebene Datei europe.csv ein und sortieren die Daten in Listen
 data = np.loadtxt('europe.csv', delimiter='\t', dtype=str, encoding='utf-8', skiprows=1)
 
 h_staedte = data[:, 0]
@@ -15,7 +17,7 @@ laender = []
 breitengrad = []
 laengengrad = []
 
-for i in range(len(h_einwohner)):
+for i in range(len(h_einwohner)):               #hier prüfen wir, welche Städte mehr als 2 * 10^5 Einwohner haben und damit untersucht werden
     if h_einwohner[i] >= 2e5:
         population.append(h_einwohner[i])
         laender.append(h_laender[i])
@@ -37,14 +39,14 @@ with open('landConnections.txt', 'w', encoding='utf-8') as file:
     for i in range(len(cities)):
         for j in range(i+1, len(cities)):  # Starten bei i+1 um doppelte Berechnung zu vermeiden
             abstand_ij = abstand(i, j)
-            if abstand_ij <= 500:
+            if abstand_ij <= 500:                   #alle möglichen Landverbindungen, also alle Städte die näher als 500km voneinander entfernt sind, kommen in die Textdatei landConnections.txt
                 file.write(f'{cities[i]}\t{cities[j]}\t{abstand_ij:.2f}\n')
 
 with open('airConnections.txt', 'w', encoding='utf-8') as file:
     ueberschrift = ['Stadt1', 'Stadt2']
     file.write(f'{ueberschrift[0]}\t{ueberschrift[1]}\n')
     for i in range(len(cities)):
-        if population[i] >= 1e6:
+        if population[i] >= 1e6:            #alle Städte mit mehr als 1mio Einwohner kommen in die Luftverbindungsdatei
             for j in range(i+1, len(cities)):
                 if population[j] >= 1e6:
                     file.write(f'{cities[i]}\t{cities[j]}\n')
