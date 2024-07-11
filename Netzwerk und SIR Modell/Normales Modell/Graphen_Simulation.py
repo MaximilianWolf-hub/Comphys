@@ -3,26 +3,22 @@ import matplotlib.pyplot as plt
 from SIR_Funktionen import infectODEsolverAll, sus, inf, rec, infectRK4All, infectEulerAll
 from Reisebewegungen import travel
 
+# in diesem Modul wollen wir gezielt Plots von Populationsentwicklungen in einzelnen Städten erstellen
 
-
-second_column_list = sus[:, 1].tolist()
+second_column_list = sus[:, 1].tolist()         # wir starten wie in main.py eine Infektion in London
 index = second_column_list.index('LONDON')
-inf[index, 0] = 0
+inf[index, 0] = 1000            # anfang sind es 1000 Infizierte
 
 
-sus_list = sus[:, 0].tolist()
+sus_list = sus[:, 0].tolist()           # sus_list, inf_list und rec_list wie in main.py
 inf_list = inf[:, 0].tolist()
 rec_list = rec[:, 0].tolist()
 
-pt = 0.01
-
-sus_London = []
-inf_London = []
-rec_London = []
+pt = 0.01       # Reisewahrscheinlichkeit
 
 
-all_suspects = np.array([sus_list])
-all_infections = np.array([inf_list])
+all_suspects = np.array([sus_list])             # enthalten wie in main.py die Populationsenticklungen aller Städte geordnet wie in cities
+all_infections = np.array([inf_list])           # jede Spalte enthält die Populationsentwicklung einer Stadt
 all_recovered = np.array([rec_list])
 
 # Simulation über 365 Tage
@@ -36,7 +32,7 @@ for i in range(365):
     all_infections = np.vstack((all_infections, inf_list))
     all_recovered = np.vstack((all_recovered, rec_list))
 
-    # Simuliere Infektionen mit Euler-Verfahren
+    # Simuliere Infektionen mit gewünschten-Verfahren
     infectRK4All(sus_list, inf_list, rec_list)
     print('Tag:', i)
 

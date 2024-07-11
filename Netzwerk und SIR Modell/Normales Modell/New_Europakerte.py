@@ -57,5 +57,5 @@ def create_map(sus, inf, rec):
         ).add_to(m)
 
     # Karte speichern
-    m.save('map_SIR_normal.html')
+    m.save('map_SIR_normal.html')  # Name der HTML-Datei
 
