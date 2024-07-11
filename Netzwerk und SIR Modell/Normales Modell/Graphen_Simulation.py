@@ -7,7 +7,7 @@ from Reisebewegungen import travel
 
 second_column_list = sus[:, 1].tolist()         # wir starten wie in main.py eine Infektion in London
 index = second_column_list.index('LONDON')
-inf[index, 0] = 1000            # anfang sind es 1000 Infizierte
+inf[index, 0] = 0            # anfang sind es 1000 Infizierte
 
 
 sus_list = sus[:, 0].tolist()           # sus_list, inf_list und rec_list wie in main.py
@@ -22,7 +22,7 @@ all_infections = np.array([inf_list])           # jede Spalte enthält die Popul
 all_recovered = np.array([rec_list])
 
 # Simulation über 365 Tage
-for i in range(365):
+for i in range(1000):
     # Reisebewegungen simulieren
     sus_list = travel(sus_list, pt)
     inf_list = travel(inf_list, pt)
@@ -36,14 +36,30 @@ for i in range(365):
     infectRK4All(sus_list, inf_list, rec_list)
     print('Tag:', i)
 
+
+# Graphische Darstellung der Populationen in London
 plt.plot(all_suspects[:, index], label='S-Population')
-plt.plot(all_infections[:, index], label='Infektionen')
-plt.plot(all_recovered[:, index], label='Genesene')
-plt.yscale('log')
+#plt.plot(all_infections[:, index], label='Infektionen')
+#plt.plot(all_recovered[:, index], label='Genesene')
+#plt.yscale('log')
 plt.ylabel('Anzahl an Personen')
 plt.xlabel('Tage seit Infektionsbeginn')
 plt.legend()
-plt.savefig('SIR_normal_rk4.jpeg')
+plt.title('Population London')
+plt.savefig('noInfectedLondon.jpeg')
 plt.show()
 
 
+
+index2 = second_column_list.index('Frankfurt am Main')
+# Graphische Darstellung der Populationen in Frankfurt am Main
+plt.plot(all_suspects[:, index2], label='S-Population')
+#plt.plot(all_infections[:, index2], label='Infektionen')
+#plt.plot(all_recovered[:, index2], label='Genesene')
+#plt.yscale('log')
+plt.ylabel('Anzahl an Personen')
+plt.xlabel('Tage seit Infektionsbeginn')
+plt.legend()
+plt.title('Population Frankfurt am Main')
+plt.savefig('noInfectedFfm.jpeg')
+plt.show()
