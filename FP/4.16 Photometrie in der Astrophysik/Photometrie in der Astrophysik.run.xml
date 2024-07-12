@@ -1,4 +1,3 @@
-
 <?xml version="1.0" standalone="yes"?>
 <!-- logreq request file -->
 <!-- logreq version 1.0 / dtd version 1.0 -->
@@ -42,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>"Photometrie in der Astrophysik".aux</file>
@@ -64,7 +63,7 @@
       <file>ngerman.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="0">
+  <external package="biblatex" priority="5" active="1">
     <generic>bibtex</generic>
     <cmdline>
       <binary>bibtex</binary>
