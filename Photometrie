@@ -43,3 +43,5 @@ plt.title('Fourier-Fit der Lichtkurve')
 plt.show()
 
 print(f"Gefittete Periodendauer: {P_fit}")
+
+
