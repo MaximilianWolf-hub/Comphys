@@ -13,8 +13,8 @@ rec = np.array(combined, dtype=object)        #dtype Object, damit wir zwei vers
                                               #speichern können (Floats - erste Spalte, Strings - zweite Spalte)
 
 mu = 3e-5           #das sind die Parameter unserer Epedemie, die wir hier anpassen können
-beta = 0            # beta ist der Ansteckungsparameter, mu die Sterbe- und Reproduktionsrate und gamma die Erhohlungsrate
-gamma = 0
+beta = 0.1            # beta ist der Ansteckungsparameter, mu die Sterbe- und Reproduktionsrate und gamma die Erhohlungsrate
+gamma = 0.07
 
 
 def SIR(x, t=0):        # diese DGL möchten wir numerisch lösen
