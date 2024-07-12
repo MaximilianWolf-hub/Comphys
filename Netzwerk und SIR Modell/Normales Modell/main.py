@@ -5,7 +5,7 @@ from New_Europakerte import create_map
 
 second_column_list = sus[:, 1].tolist()             #Wir wollen den Index der Stadt London herausfinden, bei der eine
 index = second_column_list.index('LONDON')          #Epidemie gestartet wird und setzten die Anzahl an infizierten auf 1000
-inf[index, 0] = 1000
+inf[index, 0] = 0
 
 
 sus_list = sus[:, 0].tolist()       #sus_list, inf_list und rec_list enthalten jeweils die aktuellen Zahlen von
@@ -19,7 +19,7 @@ all_suspects = np.array([sus_list])         #diese Listen speichern gleich in je
 all_infections = np.array([inf_list])       #aus jeder Stadt in der selben Reihenfolge wie in cities
 all_recovered = np.array([rec_list])        #also jede Zeile wird die Entwicklung der Populationen einer Stadt über einen bestimmten Zeitraum angeben
 
-time_span = 365     #die Zeitspanne, über die die Krankheit sich ausbreitet
+time_span = 2000     #die Zeitspanne, über die die Krankheit sich ausbreitet
 
 
 # Simulation über 365 Tage

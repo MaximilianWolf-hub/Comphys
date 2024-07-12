@@ -1,0 +1,134 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global/global}
+  \entry{hartman2009hat}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=eaH}{%
+         prefix={et.},
+         prefixi={e\bibinitperiod},
+         family={al},
+         familyi={a\bibinitperiod},
+         given={Hartman},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{aHe1}
+    \strng{fullhash}{aHe1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{1}
+    \field{pages}{785}
+    \field{title}{HAT-P-12b: A low-density sub-saturn mass planet transiting a metal-poor K dwarf}
+    \field{volume}{706}
+    \field{year}{2009}
+  \endentry
+
+  \entry{NasaExo}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={NASA},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{note}{Aufgerufen: 09.06.2024}
+    \field{title}{In Depth: Exoplanets}
+    \verb{url}
+    \verb https://science.nasa.gov/exoplanets/facts/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{ExoHand}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=PMAC}{%
+         family={Perryman},
+         familyi={P\bibinitperiod},
+         given={M.\bibnamedelima A.\bibnamedelima C.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{PMAC1}
+    \strng{fullhash}{PMAC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{The Exoplanet Handbook}
+    \field{year}{2011}
+  \endentry
+
+  \entry{exoDataCzech}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=SCA}{%
+         family={Society},
+         familyi={S\bibinitperiod},
+         given={Czech\bibnamedelima Astronomial},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SCA1}
+    \strng{fullhash}{SCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{Aufgerufen: 27.06.2024}
+    \field{title}{Exoplanet Transit Database}
+    \verb{url}
+    \verb http://var2.astro.cz/ETD/etd.php?STARNAME=HAT-P-12&PLANET=b
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{wikiRand}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{Aufgerufen: 18.06.2024}
+    \field{title}{Randverdunkelung}
+    \verb{url}
+    \verb https://de.wikipedia.org/wiki/Randverdunkelung#
+    \endverb
+    \field{year}{2023}
+  \endentry
+\enddatalist
+\endinput

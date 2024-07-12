@@ -12,7 +12,6 @@ def create_plot(sus, inf, rec, name):       # Wir erstellen für jede Stadt eine
     ax.plot(rec, label='Genesen')
     plt.xlabel('Tage seit Infektionsbeginn')
     plt.ylabel('Gesamtzahl Personen')
-    plt.yscale('log')
     ax.set_title(name)
     ax.legend()
 
