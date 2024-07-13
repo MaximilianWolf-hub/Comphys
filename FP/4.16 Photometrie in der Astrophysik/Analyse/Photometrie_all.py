@@ -1,9 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.optimize import curve_fit
 
 # Daten laden
-data = np.loadtxt('Selection6.txt', skiprows=2, dtype=float)
+data = np.loadtxt('Selection6_all.txt', skiprows=2, dtype=float)
 t = data[:, 0]
 deltaM = data[:, 1]
 uncertaintiesM = data[:, 2]
@@ -18,7 +17,7 @@ uncertainties_S = 1 / 2.5 * np.log10(np.e) * uncertaintiesM * np.exp(-np.log(np.
 fft_coefficients = np.fft.fft(frac_S)
 
 # Abbruchordnung festlegen und ggf. erhöhen
-kmax = 10  # Erhöhe kmax für mehr Frequenzkomponenten
+kmax = 20  # Erhöhe kmax für mehr Frequenzkomponenten
 
 # Filterung der Fourier-Koeffizienten
 filtered_fft_coefficients = np.zeros_like(fft_coefficients)
@@ -38,8 +37,9 @@ plt.figure(figsize=(10, 6))
 plt.errorbar(t, frac_S, yerr=uncertainties_S, fmt='o', label='Daten', color='black', capsize=2, markersize=2)
 plt.xlabel('Julianisches Datum (JD)')
 plt.plot(t, reconstructed_signal_real, label='Fourier-Fit')
-plt.ylabel(r'$\frac{S_C}{S_V}$')
+plt.ylabel(r'$S_C/S_V$')
 plt.legend()
 plt.title('Fourier-Fit der Lichtkurve')
+plt.savefig('Lichtkurve_ganz.jpeg')
 plt.show()
 
