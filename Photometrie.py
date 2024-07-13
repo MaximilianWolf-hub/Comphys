@@ -11,7 +11,7 @@ S = data[:, 1]
 
 fft_coefficients = np.fft.fft(S)
 
-kmax =
+kmax = 10
 
 filtered_fft_coefficients = np.zeros_like(fft_coefficients)
 filtered_fft_coefficients[:kmax] = fft_coefficients[:kmax]
