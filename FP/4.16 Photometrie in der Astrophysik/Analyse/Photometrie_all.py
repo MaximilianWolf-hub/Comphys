@@ -8,10 +8,10 @@ deltaM = data[:, 1]
 uncertaintiesM = data[:, 2]
 
 # Berechnung von frac_S und dessen Unsicherheiten
-frac_S = np.exp(-np.log(np.e) * deltaM / 2.5)
-uncertainties_S = 1 / 2.5 * np.log10(np.e) * uncertaintiesM * np.exp(-np.log(np.e) * deltaM / 2.5)
+frac_S = np.exp(-np.log(10) * deltaM / 2.5)
+uncertainties_S = 1 / 2.5 * np.log(10) * uncertaintiesM * np.exp(-np.log(10) * deltaM / 2.5)
 
-
+print(max(deltaM) - min(deltaM))
 
 # Fourier-Transformation
 fft_coefficients = np.fft.fft(frac_S)
