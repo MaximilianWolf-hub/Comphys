@@ -1,4 +1,4 @@
-from SIR_angepasst import infectODEsolverAll, sus, inf, rec, vac
+from SIR_angepasst import infectODEsolverAll, sus, inf, rec, vac, des
 from Reisebewegungen import travel
 from Europakarte_angepasst import create_map
 import numpy as np
@@ -12,6 +12,7 @@ sus_list = sus[:, 0].tolist()
 inf_list = inf[:, 0].tolist()
 rec_list = rec[:, 0].tolist()
 vac_list = vac[:, 0].tolist()
+des_list = des[:, 0].tolist()
 
 
 

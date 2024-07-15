@@ -19,7 +19,7 @@ with open('allConnections.txt', 'r', encoding='utf-8') as f: #daten sind mit Kom
 
 #die Funktion travel fasst alle Reisebewegungen zusammen, indem sie die vorgefertigte Liste data mit ihren möglichen Reisebewegungen verwendet
 #durch Input einer Liste mit den jeweiligen Anzahlen an Infizierten/Suspekten/Genenesen können die Reisebewegungen schnell simuliert werden
-def travel(pop_list, pt):
+def travel(pop_list, inf, pop, gen, pt):
     for i in range(len(pop_list)):      #iteriert über alle Einträge in der Pop-liste
         pops = 0                        #Population alle möglichen Reiseziele einer Stadt
         for j in range(1, len(data[i][:])):  # Starte bei 1, da data[i][0] die aktuelle Stadt ist
@@ -31,8 +31,11 @@ def travel(pop_list, pt):
             city_name = data[i][k]
             if city_name in cities:
                 index = cities.index(city_name)
-                pop_list[index] += (1 / (pops)) * pt * pop_list[i] * population[index]  # eine Erklärung der Formel findet sich im Protokoll
-                pop_list[i] -= (1 / (pops)) * pt * pop_list[i] * population[index]
+                frac = inf[index] / (pop[index] + gen[index]) # hier passen wir die Reisewahrscheinlichkeit an den Anteil der Infizierten an
+                pt_real = pt * (1 - frac)                     # je mehr größer der Anteil an Infizierten, desto geringer die Reisewahrscheinlickeit
+                pop_list[index] += (1 / (pops)) * pt_real * pop_list[i] * population[index]  # eine Erklärung der Formel findet sich im Protokoll
+                pop_list[i] -= (1 / (pops)) * pt_real * pop_list[i] * population[index]      # man beachte, wir verwenden nun die angepasste Reisewahrscheinlichkeit
     return pop_list
+
 
 
