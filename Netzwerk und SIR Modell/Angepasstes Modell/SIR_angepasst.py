@@ -18,8 +18,8 @@ des = np.array(combined, dtype=object)        #zudem haben wir nun eine dritte G
 mu = 3e-5   #allgemeine Sterberate
 beta = 0.1  #Infektionsparameter
 gamma = 0.07    #Erhohlungsrate
-vac_rate = 0.001    #Wahrscheinlichkeit, dass sich Person impft
-psi = 0.05   # Wahrscheinlichkeit, dass ein infizierter an der Krankheit stirbt, hier z.B. 5%
+vac_rate = 0.0001    #Wahrscheinlichkeit, dass sich Person impft
+psi = 0.01   # Wahrscheinlichkeit, dass ein infizierter an der Krankheit stirbt, hier z.B. 1%
 
 # SIR-Modell-Differentialgleichungen mit Impfungen
 def SIR(x, t):

@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from SIR_Funktionen import infectODEsolverAll, sus, inf, rec, infectRK4All, infectEulerAll
+from SIR_angepasst import infectODEsolverAll, sus, inf, rec, vac, des, infectRK4All, infectEulerAll
 from Reisebewegungen import travel
 import time
 
@@ -15,6 +15,8 @@ inf[index, 0] = 1000            # anfang sind es 1000 Infizierte
 sus_list = sus[:, 0].tolist()           # sus_list, inf_list und rec_list wie in main.py
 inf_list = inf[:, 0].tolist()
 rec_list = rec[:, 0].tolist()
+vac_list = vac[:, 0].tolist()
+des_list = des[:, 0].tolist()
 
 pt = 0.01       # Reisewahrscheinlichkeit
 
@@ -22,32 +24,28 @@ pt = 0.01       # Reisewahrscheinlichkeit
 all_suspects = np.array([sus_list])             # enthalten wie in main.py die Populationsenticklungen aller Städte geordnet wie in cities
 all_infections = np.array([inf_list])           # jede Spalte enthält die Populationsentwicklung einer Stadt
 all_recovered = np.array([rec_list])
-
-suspects_number = []
-infections_number = []
-recovered_number = []
+all_vaccinated = np.array([vac_list])
+all_deceased = np.array([des_list])
 
 start_time = time.time() # timer zur Beurteilung der Rechendauer
 
 # Simulation über 365 Tage
-for i in range(1500):
+for i in range(365):
     # Reisebewegungen simulieren
-    sus_list = travel(sus_list, pt)
-    inf_list = travel(inf_list, pt)
-    rec_list = travel(rec_list, pt)
-
-    suspects_number.append(np.sum(sus_list))
-    infections_number.append(np.sum(inf_list))
-    recovered_number.append(np.sum(rec_list))
+    sus_list = travel(sus_list, sus_list, inf_list, rec_list, pt)
+    inf_list = travel(inf_list, sus_list, inf_list, rec_list, pt)
+    rec_list = travel(rec_list, sus_list, inf_list, rec_list, pt)
 
     all_suspects = np.vstack((all_suspects, sus_list))
     all_infections = np.vstack((all_infections, inf_list))
     all_recovered = np.vstack((all_recovered, rec_list))
+    all_vaccinated = np.vstack((all_vaccinated, vac_list))
+    all_deceased = np.vstack((all_deceased, des_list))
 
     # Simuliere Infektionen mit gewünschten-Verfahren
     #infectEulerAll(sus_list, inf_list, rec_list)
     #infectRK4All(sus_list, inf_list, rec_list)
-    infectODEsolverAll(sus_list, inf_list, rec_list)
+    infectODEsolverAll(sus_list, inf_list, rec_list, vac_list, des_list)
     print('Tag:', i)
 
 end_time = time.time()
@@ -58,7 +56,9 @@ print(f"Die Ausführungszeit beträgt: {execution_time} Sekunden")
 plt.plot(all_suspects[:, index], label='S-Population')
 plt.plot(all_infections[:, index], label='Infektionen')
 plt.plot(all_recovered[:, index], label='Genesene')
-#plt.yscale('log')
+plt.plot(all_vaccinated[:, index], label='Geimpfte')
+plt.plot(all_deceased[:, index], label='Verstorbene')
+plt.yscale('log')
 plt.ylabel('Anzahl an Personen')
 plt.xlabel('Tage seit Infektionsbeginn')
 plt.legend()
@@ -73,7 +73,9 @@ index2 = second_column_list.index('Frankfurt am Main')
 plt.plot(all_suspects[:, index2], label='S-Population')
 plt.plot(all_infections[:, index2], label='Infektionen')
 plt.plot(all_recovered[:, index2], label='Genesene')
-#plt.yscale('log')
+plt.plot(all_vaccinated[:, index2], label='Geimpfte')
+plt.plot(all_deceased[:, index2], label='Verstorbene')
+plt.yscale('log')
 plt.ylabel('Anzahl an Personen')
 plt.xlabel('Tage seit Infektionsbeginn')
 plt.legend()
@@ -86,22 +88,4 @@ plt.show()
 #print('London Tag 60:', all_infections[60, index])
 #print('London Tag 150:', all_infections[150, index])
 #print('London Tag 365:', all_infections[365, index])
-
-
-
-plt.plot(suspects_number, label='S-Population in ganz Europa')
-plt.ylabel('Anzahl an Personen')
-plt.xlabel('Tage seit Infektionsbeginn')
-plt.legend()
-plt.show()
-plt.plot(infections_number, label='Infektionen in ganz Europa')
-plt.ylabel('Anzahl an Personen')
-plt.xlabel('Tage seit Infektionsbeginn')
-plt.legend()
-plt.show()
-plt.plot(recovered_number, label='Genesene in ganz Europa')
-plt.ylabel('Anzahl an Personen')
-plt.xlabel('Tage seit Infektionsbeginn')
-plt.legend()
-plt.show()
 

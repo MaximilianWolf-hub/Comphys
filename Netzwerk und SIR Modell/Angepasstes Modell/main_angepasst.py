@@ -1,4 +1,4 @@
-from SIR_angepasst import infectODEsolverAll, sus, inf, rec, vac, des
+from SIR_angepasst import infectODEsolverAll,infectRK4All, infectEulerAll, sus, inf, rec, vac, des
 from Reisebewegungen import travel
 from Europakarte_angepasst import create_map
 import numpy as np
@@ -16,35 +16,37 @@ des_list = des[:, 0].tolist()
 
 
 
-pt = 0.01
+pt = 0.01       #hier legen wir die Reisewahrscheinlich 1% fest
 
-all_suspects = np.array([sus_list])
-all_infections = np.array([inf_list])
-all_recovered = np.array([rec_list])
+
+#
+all_suspects = np.array([sus_list])             #diese Listen speichern gleich in jeder Spalte die aktuellen S-Populationen, Infektionszahlen und Genesenen, Geimpfte und Verstorbene
+all_infections = np.array([inf_list])           #aus jeder Stadt in der selben Reihenfolge wie in cities
+all_recovered = np.array([rec_list])            #also jede Zeile wird die Entwicklung der Populationen einer Stadt über einen bestimmten Zeitraum angeben
 all_vaccinated = np.array([vac_list])
+all_deceased = np.array([des_list])
 
 # Simulation über 365 Tage
 for i in range(60):
     # Reisebewegungen simulieren
-    sus_list = travel(sus_list, pt)
-    inf_list = travel(inf_list, pt)
-    rec_list = travel(rec_list, pt)
-    vac_list = travel(vac_list, pt)
+    sus_list = travel(sus_list, sus_list, inf_list, rec_list, pt)   #hier simulieren wir erst die Reisebewegungen der Populationen mit
+    inf_list = travel(inf_list, sus_list, inf_list, rec_list, pt)   #der Funktion travel aus dem Modul Reisebewegungen
+    rec_list = travel(rec_list, sus_list, inf_list, rec_list, pt)
+    vac_list = travel(vac_list, sus_list, inf_list, rec_list, pt)
+    des_list = travel(des_list, sus_list, inf_list, rec_list, pt)
 
-    all_suspects = np.vstack((all_suspects, sus_list))
-    all_infections = np.vstack((all_infections, inf_list))
+    all_suspects = np.vstack((all_suspects, sus_list))              #die aktuellen Populationen werden den Listen für die Entwicklung der Populationen
+    all_infections = np.vstack((all_infections, inf_list))          #hinzugefügt
     all_recovered = np.vstack((all_recovered, rec_list))
     all_vaccinated = np.vstack((all_vaccinated, vac_list))
 
     # Simuliere Infektionen mit Euler-Verfahren
-    infectODEsolverAll(sus_list, inf_list, rec_list, vac_list)
+    infectODEsolverAll(sus_list, inf_list, rec_list, vac_list, des_list)    #wir lösen die DGL in allen Städten mit der gewünschten Methode
+    #infectRK4All(sus_list, inf_list, rec_list, vac_list, des_list)
+    #infectEulerAll(sus_list, inf_list, rec_list, vac_list, des_list)
     print('Tag:', i)
 
-for i in range(len(sus_list)):
-    sus[i, 0] = sus_list[i]
-    inf[i, 0] = inf_list[i]
-    rec[i, 0] = rec_list[i]
-    vac[i, 0] = vac_list[i]
+
 
 #Erstelle Karte mit Daten nach geüwnschtem Zeitraum
-create_map(all_suspects, all_infections, all_recovered, all_vaccinated)
+create_map(all_suspects, all_infections, all_recovered, all_vaccinated, all_deceased)
