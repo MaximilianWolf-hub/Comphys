@@ -36,3 +36,21 @@ def travel(pop_list, pt):
     return pop_list
 
 
+def travel_new(s_list, inf_list, rec_list, pt):
+    for i in range(len(s_list)):
+        pops = 0                                 #Population alle möglichen Reiseziele einer Stadt
+        for j in range(1, len(data[i][:])):
+            city_name = data[i][j]
+            if city_name in cities:
+                index = cities.index(city_name)
+                pops += s_list[index]           # pops speichert gesunde Einwohner aller möglichen Reiseziele
+        for k in range(1, len(data[i][:])):     #nun werden die Reisebewegungen realisiert
+            city_name = data[i][k]
+            if city_name in cities:
+                index = cities.index(city_name)
+                s_list[index] += (1 / (pops)) * pt * s_list[i] * s_list[index]
+                s_list[i] -= (1 / (pops)) * pt * s_list[i] * s_list[index]
+                rec_list[index] += (1 / (pops)) * pt * s_list[index] * rec_list[i]  # eine Erklärung der Formel findet sich im Protokoll
+                rec_list[i] -= (1 / (pops)) * pt * s_list[index] * rec_list[i]
+                inf_list[index] += (1 / (pops)) * pt * s_list[index] * inf_list[i]
+                inf_list[i] -= (1 / (pops)) * pt * s_list[index] * inf_list[i]

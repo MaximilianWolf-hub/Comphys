@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from SIR_Funktionen import infectODEsolverAll, sus, inf, rec, infectRK4All, infectEulerAll
-from Reisebewegungen import travel
+from e_SIR_Modell import infectODEsolverAll, sus, inf, rec, infectRK4All, infectEulerAll
+from Reisebewegungen import travel_e
 import time
 
 
@@ -30,11 +30,9 @@ recovered_number = []
 start_time = time.time()   # timer zur Beurteilung der Rechendauer
 
 # Simulation über 365 Tage
-for i in range(100):
+for i in range(365):
     # Reisebewegungen simulieren
-    sus_list = travel(sus_list, pt)
-    inf_list = travel(inf_list, pt)
-    rec_list = travel(rec_list, pt)
+    travel_e(sus_list, inf_list, rec_list, pt)
 
     suspects_number.append(np.sum(sus_list))
     infections_number.append(np.sum(inf_list))

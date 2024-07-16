@@ -35,6 +35,8 @@ for i in range(365):
     sus_list = travel(sus_list, sus_list, inf_list, rec_list, pt)
     inf_list = travel(inf_list, sus_list, inf_list, rec_list, pt)
     rec_list = travel(rec_list, sus_list, inf_list, rec_list, pt)
+    vac_list = travel(vac_list, sus_list, inf_list, rec_list, pt)
+    des_list = travel(des_list, sus_list, inf_list, rec_list, pt)
 
     all_suspects = np.vstack((all_suspects, sus_list))
     all_infections = np.vstack((all_infections, inf_list))
