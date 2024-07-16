@@ -41,21 +41,22 @@ def travel(pop_list, pop, inf, rec, pt):
 
 def travel_e(s_list, inf_list, rec_list, pt):
     for i in range(len(s_list)):
-        if not inf_list[i] / (s_list[i]) >= 0.1:    #  wir ürüfen zuerst, ob nehr als 10% der Bevölkerung infiziert ist, wenn ja, gibt es zur Eindämmung der Epidemie keine Reisen aus dem Land raus
+        if not inf_list[i] / (s_list[i] + rec_list[i]) >= 0.1:    #  wir ürüfen zuerst, ob nehr als 10% der Bevölkerung infiziert ist, wenn ja, gibt es zur Eindämmung der Epidemie keine Reisen aus dem Land raus
             pops = 0                                # es soll zunächst bestimmt werden, wie viel Einwohner in allen möglichen Reisezielen leben
-            pt_real = pt * (0.1 - inf_list[i] / (s_list[i])) / 0.1       # die wahre Reisewahrscheinlichkeit ergibt sich durch die Annahme, dass je mehr Infizierte in einer Stadt sind, desto weniger wird gereist
+            pt_real = pt * (0.1 - inf_list[i] / (s_list[i] +rec_list[i])) / 0.1       # die wahre Reisewahrscheinlichkeit ergibt sich durch die Annahme, dass je mehr Infizierte in einer Stadt sind, desto weniger wird gereist
             for j in range(1, len(data[i][:])):
                 city_name = data[i][j]
                 if city_name in cities:
                     index = cities.index(city_name)
-                    pops += s_list[index]           # pops speichert gesunde Einwohner aller möglichen Reiseziele
+                    pops += s_list[index] + rec_list[index]          # pops speichert gesunde Einwohner aller möglichen Reiseziele
             for k in range(1, len(data[i][:])):     #nun werden die Reisebewegungen realisiert
                 city_name = data[i][k]
                 if city_name in cities:
                     index = cities.index(city_name)
-                    s_list[index] += (1 / (pops)) * pt_real * s_list[i] * s_list[index]
-                    s_list[i] -= (1 / (pops)) * pt_real * s_list[i] * s_list[index]
-                    rec_list[index] += (1 / (pops)) * pt_real * s_list[index] * rec_list[i]
-                    rec_list[i] -= (1 / (pops)) * pt_real * s_list[index] * rec_list[i]
-                    inf_list[index] += (1 / (pops)) * pt_real * s_list[index] * inf_list[i] * (1 / 5)     # wir nehmen an, dass Infizierte weniger Reisen (hier Faktor 1 / 5)
-                    inf_list[i] -= (1 / (pops)) * pt_real * s_list[index] * inf_list[i] * (1 / 5)
+                    frac = (s_list[index] + rec_list[index]) / pops * pt_real
+                    s_list[index] += s_list[i] * frac
+                    s_list[i] -= s_list[i] * frac
+                    rec_list[index] += rec_list[i] * frac
+                    rec_list[i] -= rec_list[i] * frac
+                    inf_list[index] += inf_list[i] * frac * (1 / 5)     # wir nehmen an, dass Infizierte weniger Reisen (hier Faktor 1 / 5)
+                    inf_list[i] -= inf_list[i] * frac * (1 / 5)
