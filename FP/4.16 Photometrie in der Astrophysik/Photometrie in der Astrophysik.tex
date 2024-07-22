@@ -403,12 +403,12 @@
 	
 	
 	
-	\chapter{Veränderlicher Stern} 
+\chapter{Veränderlicher Stern} 
 	
-	\subsection{Objektauswahl} 
-	Wir haben den veränderlichen Stern ZTF J165048.86+152044.3 der Herkules Konstellation in der Nacht vom 30.06.2024 zwischen 22 und 3 Uhr untersucht.
-Dieser Stern ist ein pulsierenden veränderlichen der HADS (High Amplitude δ Scuti stars) Klasse. Es handelt sich um radiale Pulsatoren mit asymmetrischen Lichtkurven, also steil ansteigende Zweige nd Amplituden >0,15 mag.
-Dieser hat einer periodendauer von 75.14 Minuten und eine Magnituden range von 13.206 (0.202) g. Die Magnituden Range gibt die Schwankung der Helligkeit des Sterns an. Dabei sind die 13.206 die Durschnittshelligkeit und (0.202) die Standardabweichung. g steht für das g-band im Hertzsprung-Russel-Diagramm und gibt einen spezifischen Bereich des sichtbaren Lichtspektrums bei etwa 477 nm an.
+\subsection{Objektauswahl} 
+Wir haben den veränderlichen Stern ZTF J165048.86+152044.3 der Herkules Konstellation in der Nacht vom 30.06.2024 zwischen 22 und 3 Uhr untersucht.
+Dieser Stern ist ein pulsierenden veränderlichen der HADS (High Amplitude $\delta$ Scuti stars) Klasse. Es handelt sich um radiale Pulsatoren mit asymmetrischen Lichtkurven, also steil ansteigende Zweige und Amplituden $\Delta m > 0,15 \si{mag}$.
+Dieser hat einer periodendauer von 75.14 Minuten und eine Magnituden range von $\Delta m =13.206 (0.202)\si{mag}$. Die Magnituden Range gibt die Schwankung der Helligkeit des Sterns an. g steht für das g-band im Hertzsprung-Russel-Diagramm und gibt einen spezifischen Bereich des sichtbaren Lichtspektrums bei etwa $477 \si{nm}$ an.
 Die Aufnahmen wurden mit einer Belichtungszeit von $120\si{s}$ und einem Luminanz-Filter aufgenommen.
 	
 	\subsection{Apertur-Photometrie}
@@ -467,74 +467,39 @@ Die Aufnahmen wurden mit einer Belichtungszeit von $120\si{s}$ und einem Luminan
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\linewidth]{Endgültig.png}
-		\caption{Lichtkurve}
+		\caption{Lichtkurve des Sterns ZTF J165048.86+152044.3}
 		\label{Abbildung 4.44}
 	\end{figure}
 
 	Es konnte keine konstante Lichtkurve geplottet werden. Grund dafür ist unter anderem, dass sopwohl die vergleichssterne, als auch die Checksterne weit von dem zu unterscuhenden entfernt sind. Zudem weisen auch zwei der Comp-sterne veränderungen in ihrer Kurve auf. Einen weiteren Einfluss könnte sein, dass der Stern an verschiedenen Postionen am Nachthimmel ist.
-Dennoch zeigt die Lichtkurve in der Abbildung eine schnelle Aufhellung, gefolgt von einem langsamen Abfall. Dies entspricht einer asymmetrischen Lichtkurve was für einen radialen Pulsator üblich ist. Dabei nimmt die amplitude mit der zeit größere Werte an, was allerdings untypisch ist.
+Dennoch zeigt die Lichtkurve in der Abbildung eine schnelle Aufhellung, gefolgt von einem langsamen Abfall. Dies entspricht einer asymmetrischen Lichtkurve was für einen radialen Pulsator üblich ist. Dabei nimmt die Amplitude mit der zeit größere Werte an, was allerdings untypisch ist.
 
 	\subsection{Modellierung der Lichtkurve}
-	Für die Modellierung der Lichtkurve verwenden wir einen Fourier-Reihen Fit bis zu einer bestimmten Abbruchsordnung Kmax. Aus diesen Daten wollen wir die Periodendauer, sowie die Magnitudenvariation bestimmen.
-	Für Kmax wurde 25 gewählt, da diese schon gut mit den Messdaten übereinstimmen.
+	Für die Modellierung der Lichtkurve verwenden wir einen Fourier-Reihen Fit bis zu einer bestimmten Abbruchsordnung $k_{max}$. Aus diesen Daten wollen wir die Periodendauer, sowie die Magnitudenvariation bestimmen.
+	Für $k_{max}$ wurde 25 gewählt, da diese schon gut mit den Messdaten übereinstimmen.
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.8\linewidth]{LK_Fit}
-		\caption{Lichtkurve}
+		\caption{Lichtkruve von ZTF J165048.86+152044.3 mit Fourierfit}
 		\label{Abbildung 4.44}
 	\end{figure}
 
-Die fourier-Koeffizienten wurden ermittelt zu:
-\documentclass{article}
-\usepackage{booktabs}
+Um die Periode zu berechnen bestimmen wir die zeitdifferenz zwischen zweier aufeinanderfolgenden Maxima. Der Durschchnitt all dieser Differenzen ergibt die Periodendauer.
+Die Magnitudendifferenz lässt sich über die Differenz zwischen der maximalen und der minimalen Magnitude berechnen.
+Damit ergibt sich die Periodendauer zu 0.05 Julian Date (JD), was etwa 72 Minuten entspricht, und einer Magnitudendifferenz von 0.1 Mag.
 
-\begin{table}[ht]
-    \centering
-    \begin{tabular}{lccclcc}
-        \toprule
-        & \multicolumn{2}{c}{Koeffizient \( C \)} & & & \multicolumn{2}{c}{Koeffizient \( D \)} \\
-        \cmidrule{2-3} \cmidrule{6-7}
-        & Wert & Unsicherheit & & & Wert & Unsicherheit \\
-        \midrule
-        C1 & 148.3544439426628 & 0.6584042598265973 & & D1 & 0.0 & 0.0 \\
-        C2 & 1.4797316268293592 & 0.45217539940824353 & & D2 & 0.566940771873932 & 0.46622344950367955 \\
-        C3 & 0.8364302092998285 & 0.46218426850262656 & & D3 & 0.35810474319343094 & 0.46107919755197385 \\
-        C4 & 1.1468796423098384 & 0.4383302432718888 & & D4 & 0.7321631581345506 & 0.46093453509558363 \\
-        C5 & 2.0436985101608833 & 0.45980533763112685 & & D5 & -0.5814854340086469 & 0.44958824152211996 \\
-        C6 & 0.836362743573689 & 0.4654889560181339 & & D6 & 1.9882055793482172 & 0.4624782012028237 \\
-        C7 & -4.027492330174196 & 0.46644117890049747 & & D7 & -1.5211650054306496 & 0.4660644945621699 \\
-        C8 & -0.10740873167461619 & 0.46093413898445795 & & D8 & 0.9303634821615013 & 0.4551137660223803 \\
-        C9 & -0.1298747826343872 & 0.4546486802867936 & & D9 & -0.1933836696328291 & 0.4608624258445787 \\
-        C10 & -0.3605492201411149 & 0.4671953830051102 & & D10 & 0.21013542233636115 & 0.4493068569196146 \\
-        C11 & 1.1137123666049429 & 0.4539946222207847 & & D11 & 0.38103212093421784 & 0.4603165223333752 \\
-        C12 & -0.3507638528367353 & 0.4422932435014157 & & D12 & 0.5284042296557919 & 0.45291404500540583 \\
-        C13 & -0.1417280428956056 & 0.45356397130597054 & & D13 & -0.3958312535474161 & 0.44736799833733343 \\
-        C14 & -0.5272265423748487 & 0.463807597841296 & & D14 & 0.3638324806716155 & 0.4360676594637262 \\
-        C15 & -0.028568415980470767 & 0.46551720663099316 & & D15 & 0.22648257639744504 & 0.4651612268936313 \\
-        C16 & 0.11313543797015604 & 0.4621966761427097 & & D16 & -0.12448025769161028 & 0.44914996515949135 \\
-        C17 & -0.07118165550140172 & 0.4666724984605514 & & D17 & 0.490593449113487 & 0.4661874204314783 \\
-        C18 & -0.03723818897021762 & 0.47294989905737667 & & D18 & 0.07486225032453828 & 0.4532527633061108 \\
-        C19 & -0.12283619271543404 & 0.4588974511077617 & & D19 & -0.07114411995603849 & 0.44875592631660105 \\
-        C20 & -0.025131187518731266 & 0.4455703033284666 & & D20 & 0.1842014241455037 & 0.44276876300859896 \\
-        \bottomrule
-    \end{tabular}
-    \caption{Gefittete Koeffizienten \( C \) und \( D \) mit Unsicherheiten}
-    \label{tab:gefittete_koeffizienten_cd}
-\end{table}
-
-Die Mittelwertbildung der Koeffizienten ergibt die Periodendauer T=(0.04809 ± 0.0012)d
-
-Die ermittleten Daten werden mit denen aus dem Referenz-Katalog verglichen: T = 0.05, ∆VC >0.15mag
- Die ermittelte Periode weicht um 3,82 Prozent vom Literaturwert ab und die ermittelte
- Magnitudendifferenz weicht um ? ab. Die Abweichungen sind relativ groß, dies könnte auf die verschiedene Bedingungen zurückführbar sein, wie z.B: verschiedene Vergleichssterne, Messgeräte, Wetterbedingungen, Temperatur, etc..
+Die ermittleten Daten werden mit denen aus dem Referenz-Katalog verglichen: T = 75.14, ∆VC >0.15mag
+Die ermittelte Periode weicht um 4,2 vom Werten aus dem Referenz-Katalog ab und die ermittelte
+Magnitudendifferenz weicht um 16 ab. Die Abweichungen sind relativ groß, dies könnte auf die verschiedene Bedingungen zurückführbar sein, wie z.B: verschiedene Vergleichssterne, Messgeräte, Wetterbedingungen, Temperatur, etc..
 
 
 	\chapter{Fazit}
-	Wir konnten die Transittiefe, Transitdauer, Totalitätsdauer und Transitmitte von dem Exoplaneten HAT-P-12b bestimmen.
-Der veränderliche Stern ZTF J165048.86+152044.3 konnte als pulsierender veränderlicher identifiziert werden. Ebenfalls konnte seine Periodendauer, sowie seine Magnitudendifferenz bestimmt werden.
-
-	
+Für den Exoplanetentransit des Planten HAT-P-12b konnte die Lichtkurve erwartungsgemäß dargestellt werden. 
+Es wurde ein Trapezfit als vereinfachtes Modell des Transits verwendet, siehe Abbildung \ref*{Abbildung 4.6}.
+Anhand der Parameter des Fits wurde somit die Transittiefe zu $\Delta F = 0,0258(5)\si{mag}$ berechnet, was einer Abweichung von unter 5\% 
+zu dem Wert aus Hartman et. al. \cite*{hartman2009hat} $\Delta F= 0,027\si{mag}$ entspricht.
+Des weiteren 
 	
 	\printbibliography
 	

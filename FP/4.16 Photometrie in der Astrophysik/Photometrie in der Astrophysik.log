@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.10)  12 JUL 2024 10:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.10)  12 JUL 2024 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Maximilian Wolf/Desktop/Latex/Uni/FP/4.16 Photometrie in der Astrophysik/Photometrie in der Astrophysik.tex"
-(c:/Users/Maximilian Wolf/Desktop/Latex/Uni/FP/4.16 Photometrie in der Astrophysik/Photometrie in der Astrophysik.tex
+**"c:/Users/Maximilian Wolf/Documents/GitHub/Comphys/Comphys/Comphys/Comphys/Comphys/FP/4.16 Photometrie in der Astrophysik/Photometrie in der Astrophysik.tex"
+(c:/Users/Maximilian Wolf/Documents/GitHub/Comphys/Comphys/Comphys/Comphys/Comphys/FP/4.16 Photometrie in der Astrophysik/Photometrie in der Astrophysik.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
 (c:/texlive/2024/texmf-dist/tex/latex/tuda-ci/tudapub.cls
@@ -1755,17 +1755,8 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'german'.
- (./Photometrie in der Astrophysik.aux
 
-LaTeX Warning: Label `Abbildung 4.4' multiply defined.
-
-
-LaTeX Warning: Label `Abbildung 4.4' multiply defined.
-
-
-LaTeX Warning: Label `Abbildung 4.4' multiply defined.
-
-)
+No file "Photometrie in der Astrophysik".aux.
 \openout1 = `"Photometrie in der Astrophysik.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
@@ -1804,7 +1795,7 @@ LaTeX Info: Redefining \showhyphens on input line 56.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-bch.cfg
+(c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-bch.cfg
 File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 ) (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2025,7 +2016,8 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 20.74pt on input line 95.
 Package tocbasic Info: character protrusion at toc deactivated on input line 95.
- (./Photometrie in der Astrophysik.toc)
+
+No file "Photometrie in der Astrophysik".toc.
 \tf@toc=\write8
 \openout8 = `"Photometrie in der Astrophysik.toc"'.
 
@@ -2066,6 +2058,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--106
 
 ]
 chapter 2.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 122.
+
+LaTeX Warning: Reference `Gleichung 2.1' on page 3 undefined on input line 122.
+
+
+LaTeX Warning: Reference `Gleichung 2.2' on page 3 undefined on input line 130.
+
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 141.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
@@ -2087,8 +2087,6 @@ Package microtype Info: Character `textbardbl ' is missing
 Package microtype Info: Character `textcelsius ' is missing
 (microtype)             in font `TS1/XCharter-TLF/m/n/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 154.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 157.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
@@ -2101,13 +2099,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
 
 [4{c:/texlive/2024/texmf-dist/fonts/enc/dvips/xcharter/xch1_co4ru4.enc}]
+
+LaTeX Warning: Reference `Gleichung 2.2' on page 5 undefined on input line 165.
+
+
+LaTeX Warning: Reference `Gleichung 2.1' on page 5 undefined on input line 178.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
+LaTeX Warning: Reference `Section 2.2.2' on page 5 undefined on input line 181.
+
+
 
 [5]
+
+LaTeX Warning: Reference `Gleichung 2.5' on page 6 undefined on input line 201.
+
+
+LaTeX Warning: Reference `Gleichung 2.6' on page 6 undefined on input line 201.
+
+
+LaTeX Warning: Reference `Gleichung 2.4' on page 6 undefined on input line 203.
+
+
+LaTeX Warning: Reference `Gleichung 2.5' on page 6 undefined on input line 203.
+
+
+LaTeX Warning: Reference `Gleichung 2.6' on page 6 undefined on input line 203.
+
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 212.
 
@@ -2127,22 +2150,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--260
 
  []
 
-<TransitDarstellung.jpg, id=153, 516.42938pt x 342.5297pt>
+<TransitDarstellung.jpg, id=98, 516.42938pt x 342.5297pt>
 File: TransitDarstellung.jpg Graphic file (type jpg)
 <use TransitDarstellung.jpg>
 Package pdftex.def Info: TransitDarstellung.jpg  used on input line 263.
 (pdftex.def)             Requested size: 307.2929pt x 203.82076pt.
 
+LaTeX Warning: Reference `Abbildung 4.1' on page 9 undefined on input line 268.
+
+
 
 [9
 
  <./TransitDarstellung.jpg>]
-<Limb_darkening_layers.svg.png, id=168, 1027.84pt x 1087.06125pt>
+
+LaTeX Warning: Reference `Gleichung 4.1' on page 10 undefined on input line 283.
+
+
+LaTeX Warning: Reference `Abbildung 4.2' on page 10 undefined on input line 284.
+
+
+LaTeX Warning: Reference `Abbildung 4.3' on page 10 undefined on input line 284.
+
+
+LaTeX Warning: Reference `Abbildung 4.1' on page 10 undefined on input line 284.
+
+<Limb_darkening_layers.svg.png, id=109, 1027.84pt x 1087.06125pt>
 File: Limb_darkening_layers.svg.png Graphic file (type png)
 <use Limb_darkening_layers.svg.png>
 Package pdftex.def Info: Limb_darkening_layers.svg.png  used on input line 288.
 (pdftex.def)             Requested size: 204.85672pt x 216.64539pt.
-<ModellExoLichtkurve.jpg, id=170, 498.36188pt x 445.665pt>
+<ModellExoLichtkurve.jpg, id=111, 498.36188pt x 445.665pt>
 File: ModellExoLichtkurve.jpg Graphic file (type jpg)
 <use ModellExoLichtkurve.jpg>
 Package pdftex.def Info: ModellExoLichtkurve.jpg  used on input line 294.
@@ -2155,11 +2193,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--305
 
 
 [10 <./Limb_darkening_layers.svg.png> <./ModellExoLichtkurve.jpg>]
-<Quick_Photometry_Fehler.PNG, id=186, 1062.21844pt x 495.35063pt>
+
+LaTeX Warning: Reference `Subsec 2.3.2' on page 11 undefined on input line 312.
+
+
+LaTeX Warning: Reference `Abbildung 4.4' on page 11 undefined on input line 313.
+
+
+LaTeX Warning: Reference `Gleichung 2.4' on page 11 undefined on input line 313.
+
+
+LaTeX Warning: Reference `Gleichung 2.6' on page 11 undefined on input line 313.
+
+<Quick_Photometry_Fehler.PNG, id=124, 1062.21844pt x 495.35063pt>
 File: Quick_Photometry_Fehler.PNG Graphic file (type png)
 <use Quick_Photometry_Fehler.PNG>
 Package pdftex.def Info: Quick_Photometry_Fehler.PNG  used on input line 318.
 (pdftex.def)             Requested size: 409.72125pt x 191.06961pt.
+
+LaTeX Warning: Reference `Gleichung 2.6' on page 11 undefined on input line 323.
 
 
 LaTeX Warning: Command \ss invalid in math mode on input line 323.
@@ -2168,7 +2220,7 @@ Missing character: There is no � in font cmr10!
 
 
 [11 <./Quick_Photometry_Fehler.PNG>]
-<VarCheckComp_exo.png, id=198, 865.73438pt x 578.91281pt>
+<VarCheckComp_exo.png, id=136, 865.73438pt x 578.91281pt>
 File: VarCheckComp_exo.png Graphic file (type png)
 <use VarCheckComp_exo.png>
 Package pdftex.def Info: VarCheckComp_exo.png  used on input line 352.
@@ -2176,50 +2228,97 @@ Package pdftex.def Info: VarCheckComp_exo.png  used on input line 352.
 
 
 [12 <./VarCheckComp_exo.png>]
-<Exoplanet_Trapez_Fit.jpg, id=206, 462.528pt x 346.896pt>
+
+LaTeX Warning: Reference `Abbildung 4.6' on page 13 undefined on input line 358.
+
+<Exoplanet_Trapez_Fit.jpg, id=144, 462.528pt x 346.896pt>
 File: Exoplanet_Trapez_Fit.jpg Graphic file (type jpg)
 <use Exoplanet_Trapez_Fit.jpg>
 Package pdftex.def Info: Exoplanet_Trapez_Fit.jpg  used on input line 362.
 (pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+LaTeX Warning: Reference `Abbildung 4.6' on page 13 undefined on input line 375.
+
 
 
 [13 <./Exoplanet_Trapez_Fit.jpg>]
 
 [14]
 chapter 5.
-<Screenshot 2024-07-01 203800.png, id=227, 894.34125pt x 425.79076pt>
+
+c:/Users/Maximilian Wolf/Documents/GitHub/Comphys/Comphys/Comphys/Comphys/Comphys/FP/4.16 Photometrie in der Astrophysik/Photometrie in der Astrophysik.tex:410: LaTeX Error: Unicode character δ (U+03B4)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.410 ...ränderlichen der HADS (High Amplitude δ
+                                                   Scuti stars) Klasse. Es h...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+<Screenshot 2024-07-01 203800.png, id=167, 894.34125pt x 425.79076pt>
 File: Screenshot 2024-07-01 203800.png Graphic file (type png)
 <use Screenshot 2024-07-01 203800.png>
-Package pdftex.def Info: Screenshot 2024-07-01 203800.png  used on input line 417.
+Package pdftex.def Info: Screenshot 2024-07-01 203800.png  used on input line 419.
 (pdftex.def)             Requested size: 409.72125pt x 195.06699pt.
+
+LaTeX Warning: Reference `Gleichung 2.6' on page 15 undefined on input line 424.
+
 
 
 [15
 
  <./Screenshot 2024-07-01 203800.png>]
-<entgültig.png, id=236, 433.62pt x 398.08725pt>
+<entgültig.png, id=177, 433.62pt x 398.08725pt>
 File: entgültig.png Graphic file (type png)
 <use entgültig.png>
-Package pdftex.def Info: entgültig.png  used on input line 453.
+Package pdftex.def Info: entgültig.png  used on input line 455.
 (pdftex.def)             Requested size: 409.72125pt x 376.16406pt.
-<Endgültig.png, id=237, 1075.01625pt x 532.99126pt>
+<Endgültig.png, id=178, 1075.01625pt x 532.99126pt>
 File: Endgültig.png Graphic file (type png)
 <use Endgültig.png>
-Package pdftex.def Info: Endgültig.png  used on input line 465.
+Package pdftex.def Info: Endgültig.png  used on input line 469.
 (pdftex.def)             Requested size: 409.72125pt x 203.14061pt.
 
 
 [16 <./entgültig.png>]
+<LK_Fit.png, id=187, 591.4095pt x 324.0105pt>
+File: LK_Fit.png Graphic file (type png)
+<use LK_Fit.png>
+Package pdftex.def Info: LK_Fit.png  used on input line 483.
+(pdftex.def)             Requested size: 409.72125pt x 224.46729pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+c:/Users/Maximilian Wolf/Documents/GitHub/Comphys/Comphys/Comphys/Comphys/Comphys/FP/4.16 Photometrie in der Astrophysik/Photometrie in der Astrophysik.tex:492: LaTeX Error: Unicode character ∆ (U+2206)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.492 ...ferenz-Katalog verglichen: T = 75.14, ∆
+                                                  VC >0.15mag
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
 
 [17 <./Endgültig.png>]
+
+[18 <./LK_Fit.png>]
 chapter 6.
 
 
-[18
+[19
 
 ]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 476.
+(Font)              scaled to size 10.95pt on input line 503.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/XCharter-TLF/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2246,7 +2345,7 @@ Package tudapub Warning: You did not provide a Label for key discussion.
 
 
 
-[19
+[20
 
 {c:/texlive/2024/texmf-dist/fonts/enc/dvips/xcharter/xch_yelf2i.enc}] (./Photometrie in der Astrophysik.aux)
  ***********
@@ -2255,25 +2354,33 @@ L3 programming layer <2024-05-27>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                "Photometrie in der Astrophysik"
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to '"Photometrie in der Astrophysik".run.xml'.
 \openout1 = `"Photometrie in der Astrophysik.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52346 strings out of 473583
- 1114715 string characters out of 5732342
- 2007380 words of memory out of 5000000
- 74109 multiletter control sequences out of 15000+600000
- 690462 words of font info for 257 fonts, out of 8000000 for 9000
+ 52351 strings out of 473583
+ 1114665 string characters out of 5732342
+ 2005811 words of memory out of 5000000
+ 74118 multiletter control sequences out of 15000+600000
+ 690076 words of font info for 256 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 122i,21n,121p,11036b,2734s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,21n,121p,11075b,2734s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb><c:/texlive/2024/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Photometrie in der Astrophysik.pdf" (21 pages, 4801952 bytes).
+Output written on "Photometrie in der Astrophysik.pdf" (22 pages, 4873600 bytes).
 PDF statistics:
- 447 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
- 62779 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 60736 words of extra memory for PDF output out of 61914 (max. 10000000)
 
