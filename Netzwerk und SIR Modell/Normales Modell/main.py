@@ -19,7 +19,7 @@ all_suspects = np.array([sus_list])         #diese Listen speichern gleich in je
 all_infections = np.array([inf_list])       #aus jeder Stadt in der selben Reihenfolge wie in cities
 all_recovered = np.array([rec_list])        #also jede Zeile wird die Entwicklung der Populationen einer Stadt über einen bestimmten Zeitraum angeben
 
-time_span = 2000     #die Zeitspanne, über die die Krankheit sich ausbreitet
+time_span = 50     #die Zeitspanne, über die die Krankheit sich ausbreitet
 
 
 # Simulation über 365 Tage
@@ -37,7 +37,7 @@ for i in range(time_span):
     infectODEsolverAll(sus_list, inf_list, rec_list)            #wir lösen die DGL in allen Städten mit der gewünschten Methode
     #infectRK4All(sus_list, inf_list, rec_list)
     #infectEulerAll(sus_list, inf_list, rec_list)
-    print('Tag:', i)
+    print('Tag:', i+1)
 
 
 
