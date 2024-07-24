@@ -1,7 +1,7 @@
 from SIRFunktionenEuAf import infectODEsolverAll, sus, inf, rec
 from ReisefunktionenVerbindung import travelCombined
 import numpy as np
-from AfricaKarte import create_map
+from KarteVerbindung import create_map
 
 second_column_list = sus[:, 1].tolist()             # Wir wollen den Index der Stadt herausfinden, bei der eine
 index = second_column_list.index('ALGIERS (EL DJAZAIR)')        # Epidemie gestartet wird und setzen die Anzahl an Infizierten auf 1000
