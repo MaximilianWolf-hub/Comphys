@@ -1,6 +1,5 @@
 import numpy as np
 
-
 #wir lesen die vorgegebene Datei europe.csv ein und sortieren die Daten in Listen
 data = np.loadtxt('europe.csv', delimiter='\t', dtype=str, encoding='utf-8', skiprows=1)
 

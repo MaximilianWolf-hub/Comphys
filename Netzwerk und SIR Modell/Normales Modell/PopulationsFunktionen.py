@@ -10,7 +10,6 @@ airConnections = np.loadtxt("airConnections.txt", dtype=str, encoding="utf-8", d
 #Reisewahrscheinlichkeit
 pt = 0.01
 
-
 #Funktion gibt alle möglichen Land-Verbindungen aus als Liste
 def travelLand(city):
     L = []
@@ -20,8 +19,6 @@ def travelLand(city):
         if city == landConnections[i, 1]:
             L.append(landConnections[i, 0])
     return L
-
-
 
 #Funktion gibt alle möglichen Luftverbindungen einer Stand aus
 def travelAir(city):
@@ -35,9 +32,6 @@ def travelAir(city):
         return L
     else:
         return []
-
-
-
 
 def travelLandAll(pop_list):  #Reisebewegung an Land braucht Liste als Input um zwischen
                           #Reisebewegungen von Infizierten, Genesenen oder Suspects zu unterscheiden
@@ -69,4 +63,3 @@ def travelAirAll(pop_list):         #Reisebewegung durch Luftverkehr braucht Lis
             pop_list[index] -= pt * pop_list(index) * pop_list(index2) / sum
     return pop_list
 
-print(travelLand('REYKJAVIK'))
