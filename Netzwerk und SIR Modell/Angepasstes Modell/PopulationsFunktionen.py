@@ -69,4 +69,3 @@ def travelAirAll(pop_list):         #Reisebewegung durch Luftverkehr braucht Lis
             pop_list[index] -= pt * pop_list(index) * pop_list(index2) / sum
     return pop_list
 
-print(travelLand('REYKJAVIK'))

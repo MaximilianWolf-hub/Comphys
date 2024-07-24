@@ -1,23 +1,23 @@
 from SIRFunktionenEuAf import infectODEsolverAll, sus, inf, rec
 from ReisefunktionenVerbindung import travelCombined
 import numpy as np
-from AfricaKarte import create_map
+from KarteVerbindung import create_map
 
 second_column_list = sus[:, 1].tolist()             # Wir wollen den Index der Stadt herausfinden, bei der eine
-index = second_column_list.index('ALGIERS (EL DJAZAIR)')        # Epidemie gestartet wird und setzen die Anzahl an Infizierten auf 1000
+index = second_column_list.index('LONDON')        # Epidemie gestartet wird und setzen die Anzahl an Infizierten auf 1000
 inf[index, 0] = 1000
 
 sus_list = sus[:, 0].tolist()       # sus_list, inf_list und rec_list enthalten jeweils die aktuellen Zahlen von
 inf_list = inf[:, 0].tolist()       # S-Population, Infizierten und Genesenen
 rec_list = rec[:, 0].tolist()
 
-pt = 0.01                           # Hier legen wir die Reisewahrscheinlichkeit auf 1% fest
+pt = 0.01                        # Hier legen wir die Reisewahrscheinlichkeit auf 1% fest
 
 all_suspects = np.array([sus_list])         # Diese Listen speichern gleich in jeder Spalte die aktuellen S-Populationen, Infektionszahlen und Genesenen
 all_infections = np.array([inf_list])       # aus jeder Stadt in der selben Reihenfolge wie in cities
 all_recovered = np.array([rec_list])        # also jede Zeile wird die Entwicklung der Populationen einer Stadt über einen bestimmten Zeitraum angeben
 
-time_span = 10      # Die Zeitspanne, über die die Krankheit sich ausbreitet
+time_span = 365      # Die Zeitspanne, über die die Krankheit sich ausbreitet
 
 # Simulation über 2000 Tage
 for i in range(time_span):
