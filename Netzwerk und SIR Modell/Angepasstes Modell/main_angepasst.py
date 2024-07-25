@@ -4,8 +4,8 @@ from Europakarte_angepasst import create_map
 import numpy as np
 
 second_column_list = sus[:, 1].tolist()
-index = second_column_list.index('LONDON')
-inf[index, 0] = 1000
+index = second_column_list.index('LONDON') #Start der Epedemie in London
+inf[index, 0] = 1000 #Anfängliche Zhal der infizierten
 
 sus_list = sus[:, 0].tolist()
 inf_list = inf[:, 0].tolist()
@@ -17,7 +17,7 @@ exp_list = des[:, 0].tolist()
 pt = 0.01       #hier legen wir die Reisewahrscheinlich 1% fest
 
 #
-all_suspects = np.array([sus_list])             #diese Listen speichern gleich in jeder Spalte die aktuellen S-Populationen, Infektionszahlen und Genesenen, Geimpfte und Verstorbene
+all_suspects = np.array([sus_list])             #diese Listen speichern gleich in jeder Spalte die aktuellen S-Populationen, Infektionszahlen und Genesenen, Geimpfte, Exponierte und Verstorbene
 all_infections = np.array([inf_list])           #aus jeder Stadt in der selben Reihenfolge wie in cities
 all_recovered = np.array([rec_list])            #also jede Zeile wird die Entwicklung der Populationen einer Stadt über einen bestimmten Zeitraum angeben
 all_vaccinated = np.array([vac_list])
@@ -43,8 +43,8 @@ for i in range(60):
 
     # Simuliere Infektionen mit Euler-Verfahren
     infectODEsolverAll(sus_list, inf_list, rec_list, vac_list, des_list, exp_list)    #wir lösen die DGL in allen Städten mit der gewünschten Methode
-    #infectRK4All(sus_list, inf_list, rec_list, vac_list, des_list)
-    #infectEulerAll(sus_list, inf_list, rec_list, vac_list, des_list)
+    #infectRK4All(sus_list, inf_list, rec_list, exp_list, vac_list, des_list)
+    #infectEulerAll(sus_list, inf_list, rec_list, exp_list, vac_list, des_list)
     print('Tag:', i+1)
 
 #Erstelle Karte mit Daten nach geüwnschtem Zeitraum

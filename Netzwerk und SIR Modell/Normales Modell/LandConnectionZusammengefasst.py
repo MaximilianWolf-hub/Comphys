@@ -1,17 +1,10 @@
-# Öffnen und Einlesen der Textdateien
-with open('landConnections.txt', 'r') as file:
-    europe_data = file.readlines()
+with open('landConnections.txt', 'r') as file:  #öffnet und liest landConnections von europa ein und
+    europe_data = file.readlines()              #speichert Daten in europe_data Liste
 
-with open('landConnectionsAfrica.txt', 'r') as file:
-    africa_data = file.readlines()
+with open('landConnectionsAfrica.txt', 'r') as file: #öffnet und liest landConnections von Afrika ein und
+    africa_data = file.readlines()                   #speichert Daten in africa_data Liste
 
-# Kombinieren der Daten
-combined_data = europe_data + africa_data
+combined_data = europe_data + africa_data   #kombiniert beide Listen zu einer
 
-# Speichern der kombinierten Verbindungen in einer neuen Datei
-with open('combined_land_connections.txt', 'w') as file:
-    file.writelines(combined_data)
-
-# Ausgabe der ersten paar Zeilen, um sicherzustellen, dass alles korrekt zusammengeführt wurde
-with open('combined_land_connections.txt', 'r') as file:
-    print(file.readlines()[:5])
+with open('combined_land_connections.txt', 'w') as file:  #Speichert die kombinierten Verbindungen
+    file.writelines(combined_data)                        #in einer neuen Datei

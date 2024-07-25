@@ -22,8 +22,8 @@ exp_list = exp[:, 0].tolist()
 pt = 0.01       # Reisewahrscheinlichkeit
 
 
-all_suspects = np.array([sus_list])             # enthalten wie in main.py die Populationsenticklungen aller Städte geordnet wie in cities
-all_infections = np.array([inf_list])           # jede Spalte enthält die Populationsentwicklung einer Stadt
+all_suspects = np.array([sus_list])      # enthalten wie in main.py die Populationsenticklungen aller Städte geordnet wie in cities
+all_infections = np.array([inf_list])    # jede Spalte enthält die Populationsentwicklung einer Stadt
 all_recovered = np.array([rec_list])
 all_vaccinated = np.array([vac_list])
 all_deceased = np.array([des_list])

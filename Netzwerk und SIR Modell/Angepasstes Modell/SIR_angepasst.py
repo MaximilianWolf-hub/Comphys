@@ -20,7 +20,7 @@ beta = 0.1  #Infektionsparameter
 gamma = 0.07    #Erhohlungsrate
 vac_rate = 0.0001    #Wahrscheinlichkeit, dass sich Person impft
 psi = 0.01   # Wahrscheinlichkeit, dass ein infizierter an der Krankheit stirbt, hier z.B. 1%
-sigma = 0.2  # Rate, mit der exponierte Personen infektiös werden (Inkubationszeit)
+sigma = 0.2  # Rate/Geschwindigkeit, mit der exponierte Personen infektiös werden (Inkubationszeit)
 
 
 # SIR-Modell-Differentialgleichungen mit Impfungen

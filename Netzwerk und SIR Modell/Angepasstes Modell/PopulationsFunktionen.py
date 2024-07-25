@@ -23,7 +23,7 @@ def travelLand(city):
 
 
 
-#Funktion gibt alle möglichen Luftverbindungen einer Stand aus
+#Funktion gibt alle möglichen Luftverbindungen einer Stadt aus
 def travelAir(city):
     if city in airConnections:
         L = []
