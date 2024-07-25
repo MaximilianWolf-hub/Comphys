@@ -47,7 +47,5 @@ for i in range(60):
     #infectEulerAll(sus_list, inf_list, rec_list, vac_list, des_list)
     print('Tag:', i+1)
 
-
-
 #Erstelle Karte mit Daten nach geüwnschtem Zeitraum
 create_map(all_suspects, all_infections, all_recovered, all_vaccinated, all_deceased, all_exposed)

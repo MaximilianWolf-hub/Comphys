@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from SIR_angepasst import infectODEsolverAll, sus, inf, rec, vac, des, infectRK4All, infectEulerAll
+from SIR_angepasst import infectODEsolverAll, sus, inf, rec, vac, des, exp, infectRK4All, infectEulerAll
 from Reisebewegungen import travel
 import time
 
@@ -17,6 +17,7 @@ inf_list = inf[:, 0].tolist()
 rec_list = rec[:, 0].tolist()
 vac_list = vac[:, 0].tolist()
 des_list = des[:, 0].tolist()
+exp_list = exp[:, 0].tolist()
 
 pt = 0.01       # Reisewahrscheinlichkeit
 
@@ -26,6 +27,7 @@ all_infections = np.array([inf_list])           # jede Spalte enthält die Popul
 all_recovered = np.array([rec_list])
 all_vaccinated = np.array([vac_list])
 all_deceased = np.array([des_list])
+all_exposed = np.array([exp_list])
 
 start_time = time.time() # timer zur Beurteilung der Rechendauer
 
@@ -37,17 +39,19 @@ for i in range(365):
     rec_list = travel(rec_list, sus_list, inf_list, rec_list, pt)
     vac_list = travel(vac_list, sus_list, inf_list, rec_list, pt)
     des_list = travel(des_list, sus_list, inf_list, rec_list, pt)
+    exp_list = travel(exp_list, sus_list, inf_list, rec_list, pt)
 
     all_suspects = np.vstack((all_suspects, sus_list))
     all_infections = np.vstack((all_infections, inf_list))
     all_recovered = np.vstack((all_recovered, rec_list))
     all_vaccinated = np.vstack((all_vaccinated, vac_list))
     all_deceased = np.vstack((all_deceased, des_list))
+    all_exposed = np.vstack((all_exposed, exp_list))
 
     # Simuliere Infektionen mit gewünschten-Verfahren
     #infectEulerAll(sus_list, inf_list, rec_list)
     #infectRK4All(sus_list, inf_list, rec_list)
-    infectODEsolverAll(sus_list, inf_list, rec_list, vac_list, des_list)
+    infectODEsolverAll(sus_list, inf_list, rec_list, vac_list, des_list, exp_list)
     print('Tag:', i)
 
 end_time = time.time()
@@ -60,6 +64,7 @@ plt.plot(all_infections[:, index], label='Infektionen')
 plt.plot(all_recovered[:, index], label='Genesene')
 plt.plot(all_vaccinated[:, index], label='Geimpfte')
 plt.plot(all_deceased[:, index], label='Verstorbene')
+plt.plot(all_exposed[:, index], label='Exponierte')
 plt.yscale('log')
 plt.ylabel('Anzahl an Personen')
 plt.xlabel('Tage seit Infektionsbeginn')
@@ -69,7 +74,6 @@ plt.savefig('noInfectedLondon.jpeg')
 plt.show()
 
 
-
 index2 = second_column_list.index('Frankfurt am Main')
 # Graphische Darstellung der Populationen in Frankfurt am Main
 plt.plot(all_suspects[:, index2], label='S-Population')
@@ -77,6 +81,7 @@ plt.plot(all_infections[:, index2], label='Infektionen')
 plt.plot(all_recovered[:, index2], label='Genesene')
 plt.plot(all_vaccinated[:, index2], label='Geimpfte')
 plt.plot(all_deceased[:, index2], label='Verstorbene')
+plt.plot(all_exposed[:, index2], label='Exponierte')
 plt.yscale('log')
 plt.ylabel('Anzahl an Personen')
 plt.xlabel('Tage seit Infektionsbeginn')
