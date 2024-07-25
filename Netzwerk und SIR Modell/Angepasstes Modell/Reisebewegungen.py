@@ -16,7 +16,6 @@ with open('allConnections.txt', 'r', encoding='utf-8') as f: #daten sind mit Kom
         data.append(entries)
 
 
-
 #die Funktion travel fasst alle Reisebewegungen zusammen, indem sie die vorgefertigte Liste data mit ihren möglichen Reisebewegungen verwendet
 #durch Input einer Liste mit den jeweiligen Anzahlen an Infizierten/Suspekten/Genenesen können die Reisebewegungen schnell simuliert werden
 def travel(pop_list, pop, inf, rec, pt):

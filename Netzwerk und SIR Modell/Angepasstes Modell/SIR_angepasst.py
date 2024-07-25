@@ -7,6 +7,7 @@ from scipy.integrate import odeint
 zeros = np.zeros(len(cities))
 combined = list(zip(zeros, cities))
 combined_sus = list(zip(population, cities))
+exp = np.array(combined, dtype=object)
 sus = np.array(combined_sus, dtype=object)    #sus erhält als Startwert die jeweiligen Populationen,
 inf = np.array(combined, dtype=object)        #denn jeder kann anfangs infiziert werden
 rec = np.array(combined, dtype=object)        #dtype Object, damit wir zwei verschiedene Datentypen im Array
@@ -14,23 +15,25 @@ vac = np.array(combined, dtype=object)        #speichern können (Floats - erste
 des = np.array(combined, dtype=object)        #zudem haben wir nun eine dritte Gruppe, die Geimpften (vac für englisch vaccinated)
                                               #und eine vierte Gruppe, die an der Krankheit verstorbenen
 
-
 mu = 3e-5   #allgemeine Sterberate
 beta = 0.1  #Infektionsparameter
 gamma = 0.07    #Erhohlungsrate
 vac_rate = 0.0001    #Wahrscheinlichkeit, dass sich Person impft
 psi = 0.01   # Wahrscheinlichkeit, dass ein infizierter an der Krankheit stirbt, hier z.B. 1%
+sigma = 0.2  # Rate, mit der exponierte Personen infektiös werden (Inkubationszeit)
+
 
 # SIR-Modell-Differentialgleichungen mit Impfungen
 def SIR(x, t):
-    S, I, R, V, D = x
-    N = S + I + R + V + D
-    dS = -beta * S * I / N + mu * (N - S) - vac_rate * S
-    dI = beta * S * I / N - gamma * I - mu * I - psi * I
+    S, I, R, V, D, E = x
+    N = S + I + R + V + D + E
+    dS = -beta * S * I / N - vac_rate * S
+    dE = beta * S * I / N - sigma * E - mu * E
+    dI = -gamma * I - psi * I + sigma * E - mu * I
     dR = gamma * I - mu * R
-    dV = vac_rate * S - mu * V      # Impfwahrscheinlichkeit mal S-Population gibt Änderung der Geimpften an
-    dD = psi * I                    # Man stirbt mit einer Wahrscheinlichkeit von psi an der Krankheit
-    return [dS, dI, dR, dV, dD]
+    dV = vac_rate * S - mu * V                        # Impfwahrscheinlichkeit mal S-Population gibt Änderung der Geimpften an
+    dD = psi * I + mu * E + mu * R + mu * I           # Man stirbt mit einer Wahrscheinlichkeit von psi an der Krankheit
+    return [dS, dI, dR, dV, dD, dE]
 
 # Euler-Verfahren
 def infectEuler(x):
@@ -56,23 +59,23 @@ def infectODEsolver(x, t):
     return x[-1]  # Wir interessieren uns nur für den Endwert nach einem Zeitschritt
 
 # SIR-Modell mit Euler-Verfahren für alle Städte
-def infectEulerAll(Sus, Inf, Rec, Vac, Des):
+def infectEulerAll(Sus, Inf, Rec, Vac, Des, Exp):
     for i in range(len(cities)):
-        x = [Sus[i], Inf[i], Rec[i], Vac[i], Des[i]]
+        x = [Sus[i], Inf[i], Rec[i], Vac[i], Des[i], Exp[i]]
         result = infectEuler(np.array(x))
-        Sus[i], Inf[i], Rec[i], Vac[i], Des[i] = result
+        Sus[i], Inf[i], Rec[i], Vac[i], Des[i], Exp[i] = result
 
 # SIR-Modell mit Runge-Kutta-Verfahren für alle Städte
-def infectRK4All(Sus, Inf, Rec, Vac, Des):
+def infectRK4All(Sus, Inf, Rec, Vac, Des, Exp):
     for i in range(len(cities)):
-        x = [Sus[i], Inf[i], Rec[i], Vac[i], Des[i]]
+        x = [Sus[i], Inf[i], Rec[i], Vac[i], Des[i], Exp[i]]
         result = infectRK4(np.array(x))
-        Sus[i], Inf[i], Rec[i], Vac[i], Des[i] = result
+        Sus[i], Inf[i], Rec[i], Vac[i], Des[i] , Exp[i]= result
 
 # SIR-Modell mit odeint für alle Städte
-def infectODEsolverAll(Sus, Inf, Rec, Vac, Des):
+def infectODEsolverAll(Sus, Inf, Rec, Vac, Des, Exp):
     for i in range(len(cities)):
-        x = [Sus[i], Inf[i], Rec[i], Vac[i], Des[i]]
+        x = [Sus[i], Inf[i], Rec[i], Vac[i], Des[i], Exp[i]]
         result = infectODEsolver(np.array(x), 0)
-        Sus[i], Inf[i], Rec[i], Vac[i], Des[i] = result
+        Sus[i], Inf[i], Rec[i], Vac[i], Des[i], Exp[i] = result
 

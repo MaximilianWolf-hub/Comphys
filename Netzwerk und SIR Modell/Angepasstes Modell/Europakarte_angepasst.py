@@ -5,13 +5,14 @@ from folium import IFrame
 import base64
 from io import BytesIO
 
-def create_plot(sus, inf, rec, vac, des, name):       # Wir erstellen für jede Stadt einen interaktiven Plot
+def create_plot(sus, inf, rec, vac, des, exp, name):       # Wir erstellen für jede Stadt einen interaktiven Plot
     fig, ax = plt.subplots()                # dieser wird dann encoded und in unsere Karte an der richtigen Stelle eingefügt
     ax.plot(sus, label='S-Population')
     ax.plot(inf, label='Infiziert')
     ax.plot(rec, label='Genesen')
     ax.plot(vac, label='Geimpfte')
     plt.plot(des, label='Verstorbene')
+    ax.plot(exp, label='Exponierte')
     plt.xlabel('Tage seit Infektionsbeginn')
     plt.ylabel('Gesamtzahl Personen')
     plt.yscale('log')
@@ -25,8 +26,8 @@ def create_plot(sus, inf, rec, vac, des, name):       # Wir erstellen für jede 
     plt.close(fig)  # Schließe die Figur, um Speicher zu sparen
     return buf
 
-def encode(sus, inf, rec, vac, des, name):
-    plot_buf = create_plot(sus, inf, rec, vac, des, name)
+def encode(sus, inf, rec, vac, des, exp, name):
+    plot_buf = create_plot(sus, inf, rec, vac, des, exp, name)
     plot_base64 = base64.b64encode(plot_buf.read()).decode('utf-8')
     plot_buf.close()
 
@@ -35,7 +36,7 @@ def encode(sus, inf, rec, vac, des, name):
     iframe = IFrame(html, width=500, height=300)
     return iframe
 
-def create_map(sus, inf, rec, vac, des):
+def create_map(sus, inf, rec, vac, des, exp):
     m = folium.Map(location=[51.1657, 10.4515], zoom_start=6)  # Deutschland, zentriert
 
     # Erstellen einer Liste mit allen wichtigen Parametern einer Stadt
@@ -49,14 +50,15 @@ def create_map(sus, inf, rec, vac, des):
             'Infizierte': inf[:, i],
             'Genesene': rec[:, i],
             'Geimpfte': vac[:, i],
-            'Verstorbene': des[:, i]
+            'Verstorbene': des[:, i],
+            'Exponierte': exp[:, i],
         })
 
     # Hinzufügen von Markern zur Karte
     for city in data:
         folium.Marker(
             location=[city['Breitengrad'], city['Längengrad']],
-            popup=folium.Popup(encode(city['S-population'], city['Infizierte'], city['Genesene'], city['Geimpfte'], city['Verstorbene'], city['name']), max_width=300),
+            popup=folium.Popup(encode(city['S-population'], city['Infizierte'], city['Genesene'], city['Geimpfte'], city['Verstorbene'], city['Exponierte'], city['name']), max_width=300),
             tooltip=city['name']
         ).add_to(m)
 
