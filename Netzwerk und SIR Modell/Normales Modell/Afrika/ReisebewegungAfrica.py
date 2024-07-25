@@ -5,7 +5,7 @@ from CityDataAfrica import population, cities
 data = []
 
 # Reisewahrscheinlichkeit
-with open('allConnectionsAfrica.txt', 'r', encoding='utf-8') as f:  # Daten sind mit Komma getrennt
+with open('../allConnectionsAfrica.txt', 'r', encoding='utf-8') as f:  # Daten sind mit Komma getrennt
     # Iteriere über jede Zeile in der Datei
     for line in f:
         # Entferne eventuelle Leerzeichen am Anfang und Ende der Zeile und teile sie in Einträge auf

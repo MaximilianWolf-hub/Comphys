@@ -2,8 +2,8 @@ import numpy as np
 from CityDataAfrica import cities, population
 
 # Lade die Verbindungen
-landConnectionsAfrica = np.loadtxt("landConnectionsAfrica.txt", dtype=str, encoding="utf-8", skiprows=1, delimiter='\t')
-airConnectionsAfrica = np.loadtxt("airConnectionsAfrica.txt", dtype=str, encoding="utf-8", delimiter='\t', skiprows=1)
+landConnectionsAfrica = np.loadtxt("../landConnectionsAfrica.txt", dtype=str, encoding="utf-8", skiprows=1, delimiter='\t')
+airConnectionsAfrica = np.loadtxt("../airConnectionsAfrica.txt", dtype=str, encoding="utf-8", delimiter='\t', skiprows=1)
 
 # Funktion gibt alle möglichen Land-Verbindungen aus als Liste
 def travelLandAfrica(city):
@@ -30,7 +30,7 @@ def travelAirAfrica(city):
 # in der selben Reihe (also in den folgenden Spalten) hinzugefügt
 # Wichtig: die einzelnen Städte sind durch Kommas abgetrennt, sodass Städte aus mehreren Wörtern später auch erkannt werden
 
-with open('allConnectionsAfrica.txt', 'w', encoding='utf-8') as datei:
+with open('../allConnectionsAfrica.txt', 'w', encoding='utf-8') as datei:
     for i in range(len(cities)):
         city_name = cities[i]
         connections_str = travelLandAfrica(city_name)

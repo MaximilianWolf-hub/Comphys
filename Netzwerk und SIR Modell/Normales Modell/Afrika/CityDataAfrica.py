@@ -1,7 +1,7 @@
 import numpy as np
 
 # Wir lesen die vorgegebene Datei africa.csv ein und sortieren die Daten in Listen
-data = np.loadtxt('africa.csv', delimiter='\t', dtype=str, encoding='utf-8', skiprows=1)
+data = np.loadtxt('../africa.csv', delimiter='\t', dtype=str, encoding='utf-8', skiprows=1)
 
 h_staedte = data[:, 0]
 h_einwohner = data[:, 1].astype(float)
@@ -32,7 +32,7 @@ def abstand(j, k):  # berechnet Abstand zweier Städte in Kilometern
 
 
 # Speichert alle Land- und Luftverbindungen in jeweils einer Textdatei, auf welche zugegriffen werden kann
-with open('landConnectionsAfrica.txt', 'w', encoding='utf-8') as file:
+with open('../landConnectionsAfrica.txt', 'w', encoding='utf-8') as file:
     ueberschrift = ['Stadt1', 'Stadt2', 'Abstand']
     file.write(f'{ueberschrift[0]}\t{ueberschrift[1]}\t{ueberschrift[2]}\n')
     for i in range(len(cities)):
@@ -41,7 +41,7 @@ with open('landConnectionsAfrica.txt', 'w', encoding='utf-8') as file:
             if abstand_ij <= 500:  # alle möglichen Landverbindungen, also alle Städte, die näher als 500 km voneinander entfernt sind, kommen in die Textdatei landConnectionsAfrica.txt
                 file.write(f'{cities[i]}\t{cities[j]}\t{abstand_ij:.2f}\n')
 
-with open('airConnectionsAfrica.txt', 'w', encoding='utf-8') as file:
+with open('../airConnectionsAfrica.txt', 'w', encoding='utf-8') as file:
     ueberschrift = ['Stadt1', 'Stadt2']
     file.write(f'{ueberschrift[0]}\t{ueberschrift[1]}\n')
     for i in range(len(cities)):

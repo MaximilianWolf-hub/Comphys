@@ -1,8 +1,7 @@
 import folium
-import numpy as np
-from CityDataAfrica import cities as africa_cities, population as africa_population, breitengrad as africa_breitengrad, \
+from CityDataAfrica import cities as africa_cities, breitengrad as africa_breitengrad, \
     laengengrad as africa_laengengrad
-from CityDataEurope import cities as europe_cities, population as europe_population, breitengrad as europe_breitengrad, \
+from CityDataEurope import cities as europe_cities, breitengrad as europe_breitengrad, \
     laengengrad as europe_laengengrad
 from folium import IFrame
 import base64

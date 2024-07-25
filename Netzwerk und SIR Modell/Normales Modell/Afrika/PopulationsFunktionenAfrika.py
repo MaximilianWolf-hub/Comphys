@@ -2,8 +2,8 @@ import numpy as np
 from CityDataAfrica import cities, population
 
 # Lade die Verbindungen
-landConnectionsAfrica = np.loadtxt("landConnectionsAfrica.txt", dtype=str, encoding="utf-8", skiprows=1, delimiter='\t')
-airConnectionsAfrica = np.loadtxt("airConnectionsAfrica.txt", dtype=str, encoding="utf-8", delimiter='\t', skiprows=1)
+landConnectionsAfrica = np.loadtxt("../landConnectionsAfrica.txt", dtype=str, encoding="utf-8", skiprows=1, delimiter='\t')
+airConnectionsAfrica = np.loadtxt("../airConnectionsAfrica.txt", dtype=str, encoding="utf-8", delimiter='\t', skiprows=1)
 
 # Annahme: die Änderung der Population innerhalb einer Stadt setzt sich zusammen aus Reisen
 # aus anderen Städten in die jeweilige Stadt und Reisen aus der Stadt in andere Städte
