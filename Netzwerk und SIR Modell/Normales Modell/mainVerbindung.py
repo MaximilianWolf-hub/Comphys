@@ -17,7 +17,7 @@ all_suspects = np.array([sus_list])    #Diese Listen speichern in jeder Spalte d
 all_infections = np.array([inf_list])  #aus jeder Stadt.
 all_recovered = np.array([rec_list])   #Also jede Zeile wird die Entwicklung der Populationen einer Stadt über einen bestimmten Zeitraum angeben
 
-time_span = 30    #Zeitspanne, über die die Krankheit sich ausbreitet
+time_span = 600    #Zeitspanne, über die die Krankheit sich ausbreitet
 
 for i in range(time_span): #Schleife über Zeitspanne
     sus_list = travelCombined(sus_list, pt)         # Hier simulieren wir erst die Reisebewegungen der Populationen mit

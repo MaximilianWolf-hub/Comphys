@@ -4,7 +4,6 @@ from SIRFunktionenEuAf import infectODEsolverAllEuAf, sus, inf, rec
 from ReisefunktionenVerbindung import travelCombined
 import time
 
-
 # in diesem Modul wollen wir gezielt Plots von Populationsentwicklungen in einzelnen Städten erstellen
 
 second_column_list = sus[:, 1].tolist()      # wir starten wie in main.py eine Infektion in London
@@ -30,7 +29,7 @@ recovered_number = []
 start_time = time.time()   # timer zur Beurteilung der Rechendauer
 
 # Simulation über 365 Tage
-for i in range(100):
+for i in range(365):
     # Reisebewegungen simulieren
     sus_list = travelCombined(sus_list, pt)
     inf_list = travelCombined(inf_list, pt)
