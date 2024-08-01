@@ -22,7 +22,6 @@ with open('allConnections.txt', 'w', encoding='utf-8') as datei:
             connections_str = travelLand(city_name)
             all_connections = ','.join(connections_str)
             datei.write(f'{city_name},{all_connections}\n')
-print("hello Konstantin")
 
 
 

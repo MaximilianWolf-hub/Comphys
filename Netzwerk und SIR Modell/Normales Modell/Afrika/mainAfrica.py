@@ -17,7 +17,7 @@ all_suspects = np.array([sus_list])         # Diese Listen speichern gleich in j
 all_infections = np.array([inf_list])       # aus jeder Stadt in der selben Reihenfolge wie in cities
 all_recovered = np.array([rec_list])        # also jede Zeile wird die Entwicklung der Populationen einer Stadt über einen bestimmten Zeitraum angeben
 
-time_span = 50     # Die Zeitspanne, über die die Krankheit sich ausbreitet
+time_span = 500     # Die Zeitspanne, über die die Krankheit sich ausbreitet
 
 # Simulation über 2000 Tage
 for i in range(time_span):
@@ -35,6 +35,6 @@ for i in range(time_span):
     #infectRK4All(sus_list, inf_list, rec_list)
     #infectEulerAll(sus_list, inf_list, rec_list)
     print('Tag:', i+1)
-
+print(inf_list)
 # Erstelle Karte mit Daten nach gewünschtem Zeitraum mit den Verläufen der Populationszahlen
 create_map(all_suspects, all_infections, all_recovered)

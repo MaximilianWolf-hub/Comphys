@@ -28,17 +28,17 @@ def SIREuAf(x, t=0):  # diese DGL möchten wir numerisch lösen
 # Euler-Verfahren für eine Stadt
 def infectEulerEuAF(x):
     h = 1
-    x += h * np.array(SIR(x))
+    x += h * np.array(SIREuAf(x))
     return x
 
 # Runge-Kutta-Verfahren vierter Ordnung für eine Stadt
 def infectRK4EuAF(x):
     h = 1
     x = np.array(x)  # Sicherstellen, dass x ein numpy-Array ist
-    k1 = h * np.array(SIR(x))
-    k2 = h * np.array(SIR(x + 0.5 * k1))
-    k3 = h * np.array(SIR(x + 0.5 * k2))
-    k4 = h * np.array(SIR(x + k3))
+    k1 = h * np.array(SIREuAf(x))
+    k2 = h * np.array(SIREuAf(x + 0.5 * k1))
+    k3 = h * np.array(SIREuAf(x + 0.5 * k2))
+    k4 = h * np.array(SIREuAf(x + k3))
     x += (k1 + 2 * k2 + 2 * k3 + k4) / 6
     return x
 

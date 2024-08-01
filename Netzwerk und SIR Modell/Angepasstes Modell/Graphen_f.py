@@ -10,6 +10,7 @@ import time
 second_column_list = sus[:, 1].tolist()         # wir starten wie in main.py eine Infektion in London
 index = second_column_list.index('LONDON')
 inf[index, 0] = 1000            # anfang sind es 1000 Infizierte
+index2 = second_column_list.index('Frankfurt am Main')
 
 
 sus_list = sus[:, 0].tolist()           # sus_list, inf_list und rec_list wie in main.py
@@ -20,6 +21,12 @@ exp_list = exp[:, 0].tolist()
 
 pt = 0.01       # Reisewahrscheinlichkeit
 
+suspects_number = []
+infections_number = []
+recovered_number = []
+des_number = 0
+
+
 
 all_suspects = np.array([sus_list])      # enthalten wie in main.py die Populationsenticklungen aller Städte geordnet wie in cities
 all_infections = np.array([inf_list])    # jede Spalte enthält die Populationsentwicklung einer Stadt
@@ -27,16 +34,21 @@ all_recovered = np.array([rec_list])
 all_deceased = np.array([des_list])
 all_exposed = np.array([exp_list])
 
-start_time = time.time() # timer zur Beurteilung der Rechendauer
+start_time = time.time()  # timer zur Beurteilung der Rechendauer
 
 # Simulation über 365 Tage
-for i in range(365):
+for i in range(366):
     # Reisebewegungen simulieren
     sus_list = travel(sus_list, sus_list, inf_list, rec_list, pt)
     inf_list = travel(inf_list, sus_list, inf_list, rec_list, pt)
     rec_list = travel(rec_list, sus_list, inf_list, rec_list, pt)
     des_list = travel(des_list, sus_list, inf_list, rec_list, pt)
     exp_list = travel(exp_list, sus_list, inf_list, rec_list, pt)
+
+    suspects_number.append(np.sum(sus_list))
+    infections_number.append(np.sum(inf_list))
+    recovered_number.append(np.sum(rec_list))
+    des_number += np.sum(des_list)
 
     all_suspects = np.vstack((all_suspects, sus_list))
     all_infections = np.vstack((all_infections, inf_list))
@@ -49,6 +61,12 @@ for i in range(365):
     #infectRK4All(sus_list, inf_list, rec_list)
     infectODEsolverAll(sus_list, inf_list, rec_list, des_list, exp_list)
     print('Tag:', i)
+    if i == 30 or i == 60 or i == 100 or i == 365:
+        print('Anzahl der Infizierten an Tag', i, 'in FFM: ', inf_list[index2])
+        print('Anzahl der Infizierten an Tag', i, 'in London: ', inf_list[index])
+        print('Gesamtinfektionen an Tag ', i, 'in Europa: ', infections_number[i])
+        print('Gesamtverstorbene an Tag ', i, 'in Europa: ', des_number)
+
 
 end_time = time.time()
 execution_time = end_time - start_time
