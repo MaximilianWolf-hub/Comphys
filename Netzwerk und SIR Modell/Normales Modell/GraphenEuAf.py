@@ -9,6 +9,7 @@ import time
 second_column_list = sus[:, 1].tolist()      # wir starten wie in main.py eine Infektion in London
 index = second_column_list.index('LONDON')
 inf[index, 0] = 1000            # anfang sind es 1000 Infizierte
+index2 = second_column_list.index('Frankfurt am Main')
 
 
 sus_list = sus[:, 0].tolist()           # sus_list, inf_list und rec_list wie in main.py
@@ -47,6 +48,10 @@ for i in range(365):
     #infectEulerAll(sus_list, inf_list, rec_list)
     #infectRK4All(sus_list, inf_list, rec_list)
     infectODEsolverAllEuAf(sus_list, inf_list, rec_list)
+    if i == 30 or i == 60 or i == 100 or i == 365:
+        print('Anzahl der Infizierten an Tag', i, 'in FFM: ', inf_list[index2])
+        print('Anzahl der Infizierten an Tag', i, 'in London: ', inf_list[index])
+        print('Gesamtinfektionen an Tag ', i, 'in Europa: ', infections_number[i])
     print('Tag:', i+1)
 
 end_time = time.time()
